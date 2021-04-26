@@ -1,0 +1,196 @@
+{
+    "users": [
+        {
+            "id":1,
+            "name":"Nataniel Bithany",
+            "userName":"nbithany0",
+            "email":"nbithany0@uiuc.edu",
+            "bio":"encompassing",
+            "isAdmin":false
+        },
+        {
+            "id":2,
+            "name":"Mario Iacovo",
+            "userName":"miacovo1",
+            "email":"miacovo1@slate.com",
+            "bio":"Phased",
+            "isAdmin":false
+        },
+        {
+            "id":3,
+            "name":"Jo ann Skitteral",
+            "userName":"jann2",
+            "email":"jann2@geocities.jp",
+            "bio":"bandwidth-monitored",
+            "isAdmin":false
+        },
+        {
+            "id":4,
+            "name":"Alla Quaife",
+            "userName":"aquaife3",
+            "email":"aquaife3@dot.gov",
+            "bio":"heuristic",
+            "isAdmin":false
+        },
+        {
+            "id":5,
+            "name":"Merissa Bridgwater",
+            "userName":"mbridgwater4",
+            "email":"mbridgwater4@google.ru",
+            "bio":"neutral",
+            "isAdmin":false
+        },
+        {
+            "id":6,
+            "name":"Rafaellle Jorge",
+            "userName":"rjorge5",
+            "email":"rjorge5@europa.eu",
+            "bio":"Multi-lateral",
+            "isAdmin":false
+        },
+        {
+            "id":7,
+            "name":"Justino Torregiani",
+            "userName":"jtorregiani6",
+            "email":"jtorregiani6@bloglines.com",
+            "bio":"Decentralized",
+            "isAdmin":false
+        },
+        {
+            "id":8,
+            "name":"Marchelle Petry",
+            "userName":"mpetry7",
+            "email":"mpetry7@mozilla.org",
+            "bio":"knowledge user",
+            "isAdmin":false
+        },
+        {
+            "id":9,
+            "name":"Peg Bayns",
+            "userName":"pbayns8",
+            "email":"pbayns8@yahoo.co.jp",
+            "bio":"background",
+            "isAdmin":false
+        },
+        {
+            "id":10
+            ,"name":"Sophey McGlew",
+            "userName":"smcglew9",
+            "email":"smcglew9@reuters.com",
+            "bio":"project",
+            "isAdmin":false
+        },
+        {
+            "id":11
+            ,"name":"Guglielmo Fisher",
+            "userName":"gfishera",
+            "email":"gfishera@theglobeandmail.com",
+            "bio":"modular",
+            "isAdmin":false
+        },
+        {
+            "id":12
+            ,"name":"Mariana Jakubowicz",
+            "userName":"mjakubowiczb",
+            "email":"mjakubowiczb@xrea.com",
+            "bio":"Multi-layered",
+            "isAdmin":false
+        }
+    ],
+    "movies": [],
+    "listing": [],
+    "movieLists": [],
+    "meetupListing": [],
+    "meetups": [
+        {
+            "id":1,
+            "name":"Fisher, Beer and Jones",
+            "address":"49 Chive Court",
+            "creatorId":1,
+            "movieListId":1,
+            "date":"4/30/2020",
+            "description":"internet solution",
+            "isFull":false
+        },
+        {
+            "id":2,
+            "name":"O'Connell-Hessel",
+            "address":"13822 North Parkway",
+            "creatorId":2,
+            "movieListId":2,
+            "date":"2/7/2021",
+            "description":"model",
+            "isFull":false
+        },
+        {
+            "id":3,
+            "name":"Williamson, Lynch and Walker",
+            "address":"1 Shelley Alley",
+            "creatorId":3,
+            "movieListId":3,
+            "date":"5/7/2020",
+            "description":"stable",
+            "isFull":false
+        },
+        {
+            "id":4,
+            "name":"Lindgren, Simonis and McClure",
+            "address":"6962 Logan Circle",
+            "creatorId":4,
+            "movieListId":4,
+            "date":"9/4/2020",
+            "description":"knowledge user",
+            "isFull":false
+        },
+        {
+            "id":5,
+            "name":"Baumbach, Koch and Wolff",
+            "address":"5497 Stone Corner Parkway",
+            "creatorId":5,
+            "movieListId":5,
+            "date":"3/18/2020",
+            "description":"full-range",
+            "isFull":false
+        },
+        {
+            "id":6,
+            "name":"Nikolaus, Thiel and Ondricka",
+            "address":"306 Westend Avenue",
+            "creatorId":6,
+            "movieListId":6,
+            "date":"9/26/2020",
+            "description":"Assimilated",
+            "isFull":false
+        },
+        {
+            "id":7,
+            "name":"Weber, Spencer and Upton",
+            "address":"70 Butternut Point",
+            "creatorId":7,
+            "movieListId":7,
+            "date":"7/8/2020",
+            "description":"next generation",
+            "isFull":false
+        },
+        {
+            "id":8,
+            "name":"Gleason-Weber",
+            "address":"7074 Ludington Way",
+            "creatorId":8,
+            "movieListId":8,
+            "date":"4/22/2020",
+            "description":"Intuitive",
+            "isFull":false
+        },
+        {
+            "id":9,
+            "name":"Jakubowski Inc",
+            "address":"62538 Thackeray Lane",
+            "creatorId":9,
+            "movieListId":9,
+            "date":"9/20/2020",
+            "description":"24/7",
+            "isFull":false
+        }
+    ]
+}
