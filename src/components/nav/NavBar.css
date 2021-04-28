@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap');
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 2px solid plum;
+    border-right: 2px solid plum;
+    background: purple;
+    border-radius: 1rem;
+}
+.logo-navbar {
+    width: 6rem;
+}
+.navbar_item {
+    margin: .75rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: -2rem;
+    margin-right: 3rem;
+    flex-basis: 20%;
+    list-style-type: none;
+}
+.navbar_link:hover{
+    color:lightskyblue;
+    font-family: 'Lato', sans-serif;
+}
+.navbar_link{
+    color: greenyellow;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar_logout {
+    justify-content: space-between;
+}
+
