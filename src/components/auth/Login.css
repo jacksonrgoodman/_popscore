@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap');
+
+h1,h2, label {
+    color: greenyellow;
+}
+
+label {
+    margin-right: .25rem;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+.logo-login {
+    margin-top: 1rem;
+    width: 12rem;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-in {
+    margin-top: -.5rem;
+}
+.register-input, .form-control {
+    background: whitesmoke;
+}
+
+.form-login {
+    background: purple;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.log-in {
+    width: 200%;
+}
+
+.dialog-password, .dialog-message {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.register-button {
+    color: greenyellow;
+}
+
+.button-close {
+    color: greenyellow;
+    background: purple;
+    font-family: 'Lato', sans-serif;
+    font-size : 20px; 
+    border-radius: 1rem;
+    width: 15rem; 
+    height: 4rem;
+}
+.dialog-message {
+    color: midnightblue;
+    font-family: 'Lato', sans-serif;
+}
