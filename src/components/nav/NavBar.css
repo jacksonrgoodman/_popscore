@@ -12,9 +12,9 @@
     border-radius: 1rem;
 }
 .logo-navbar {
-    width: 6rem;
+    width: 4rem;
 }
-.navbar_item {
+.navbar_item,.navbar_logout {
     margin: .75rem;
     display: flex;
     text-align: center;
@@ -34,6 +34,10 @@
 }
 
 .navbar_logout {
-    justify-content: space-between;
+    border: 2px solid red;
+    align-items:right;
+    flex-grow: 20%;
+    /* flex-direction: column-reverse;
+    align-self: flex-end; */
+    
 }
-

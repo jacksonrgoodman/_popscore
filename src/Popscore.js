@@ -10,7 +10,7 @@ export const Popscore = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("popscore_User") !== null)
 
     const setAuthUser = (user) => {
-        sessionStorage.setItem("popscore_User", JSON.stringify(user))
+        sessionStorage.setItem("popscore_User", JSON.stringify(user.id))
         setIsAuthenticated(sessionStorage.getItem("popscore_User") !== null)
     }
 

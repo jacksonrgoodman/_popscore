@@ -15,33 +15,46 @@ fieldset {
 }
 .logo-login {
     margin-top: 1rem;
+    margin-left: 1rem;
     width: 12rem;
+}
+
+.user-interface {
+}
+
+.peep-login {
+    width: 10rem;
+    margin-right: -5rem;
 }
 
 .container-login {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .sign-in {
     margin-top: -.5rem;
 }
 .register-input, .form-control {
-    background: whitesmoke;
+    background: white;
 }
-
+.login-bubble {
+    width: 100%
+}
 .form-login {
     background: purple;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    border-bottom: 2px solid plum;
+    border-right: 2px solid plum;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
-.log-in {
-    width: 200%;
-}
+
 
 .dialog-password, .dialog-message {
     background: white;
