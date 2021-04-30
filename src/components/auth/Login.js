@@ -37,23 +37,26 @@ export const Login = ({setAuthUser}) => {
                 <button className="button-close" onClick={e => existDialog.current.close()}>CLOSE</button>
             </dialog>
 
-            <section>
+            <section className="login-bubble">
                 <form className="form-login" onSubmit={handleLogin}>
-                    <img className="logo-login" src={require('./logo_popscore_login.png').default} />
-                    <h2 className="sign-in">Sign In Here!</h2>
-                    <fieldset className="input-email">
-                        <label htmlFor="inputEmail"> Email: </label>
-                        <input ref={email} type="email"
-                            id="email"
-                            className="form-control"
-                            placeholder="Email address"
-                            required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <button type="submit" className="log-in button-close">
-                            Log in
-                        </button>
-                    </fieldset>
+                    <img className="peep-login" src={require('../../images/peep-sitting-5.svg').default} />
+                    <div className="user-interface">
+                        <img className="logo-login" src={require('./logo_popscore_login.png').default} />
+                        <h2 className="sign-in">Sign In Here!</h2>
+                        <fieldset className="input-email">
+                            <label htmlFor="inputEmail"> Email: </label>
+                            <input ref={email} type="email"
+                                id="email"
+                                className="form-control"
+                                placeholder="Email address"
+                                required autoFocus />
+                        </fieldset>
+                        <fieldset>
+                            <button type="submit" className="log-in button-close">
+                                Log in
+                            </button>
+                        </fieldset>
+                    </div>
                 </form>
             </section>
             <section className="link-register">

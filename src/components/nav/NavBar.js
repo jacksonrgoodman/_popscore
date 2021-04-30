@@ -32,12 +32,12 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
                     : null}
                 {isAuthenticated
                     ? <li className="navbar_item">
-                        <span className="navbar_link" to="/"> Peep My Profile </span>
+                        <span className="navbar_link" to="/"> Peep Profiles </span>
                     </li>
                     : null}
                 {isAuthenticated
-                    ? <li className="navbar_item">
-                        <span className="navbar_logout navbar_link" onClick={handleLogout}> Logout </span>
+                    ? <li className="navbar_logout">
+                        <span className="navbar_link" onClick={handleLogout}> Logout </span>
                     </li>
                     : <li className="navbar_item">
                         <span className=" navbar_link" to="/login"> Login </span>
