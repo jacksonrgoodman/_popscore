@@ -33,76 +33,12 @@
       "isAdmin": false
     },
     {
-      "id": 5,
-      "name": "Merissa Bridgwater",
-      "userName": "mbridgwater4",
-      "email": "mbridgwater4@google.ru",
-      "bio": "neutral",
-      "isAdmin": false
-    },
-    {
-      "id": 6,
-      "name": "Rafaellle Jorge",
-      "userName": "rjorge5",
-      "email": "rjorge5@europa.eu",
-      "bio": "Multi-lateral",
-      "isAdmin": false
-    },
-    {
-      "id": 7,
-      "name": "Justino Torregiani",
-      "userName": "jtorregiani6",
-      "email": "jtorregiani6@bloglines.com",
-      "bio": "Decentralized",
-      "isAdmin": false
-    },
-    {
-      "id": 8,
-      "name": "Marchelle Petry",
-      "userName": "mpetry7",
-      "email": "mpetry7@mozilla.org",
-      "bio": "knowledge user",
-      "isAdmin": false
-    },
-    {
-      "id": 9,
-      "name": "Peg Bayns",
-      "userName": "pbayns8",
-      "email": "pbayns8@yahoo.co.jp",
-      "bio": "background",
-      "isAdmin": false
-    },
-    {
-      "id": 10,
-      "name": "Sophey McGlew",
-      "userName": "smcglew9",
-      "email": "smcglew9@reuters.com",
-      "bio": "project",
-      "isAdmin": false
-    },
-    {
-      "id": 11,
-      "name": "Guglielmo Fisher",
-      "userName": "gfishera",
-      "email": "gfishera@theglobeandmail.com",
-      "bio": "modular",
-      "isAdmin": false
-    },
-    {
-      "id": 12,
-      "name": "Mariana Jakubowicz",
-      "userName": "mjakubowiczb",
-      "email": "mjakubowiczb@xrea.com",
-      "bio": "Multi-layered",
-      "isAdmin": false
-    },
-    {
       "name": "Jackson",
       "userName": "hoverspool",
       "email": "jacksonrgoodman@gmail.com",
       "bio": "I am a gamer",
       "isAdmin": false,
-      "id": 13
+      "id": 5
     }
   ],
   "movies": [],
@@ -111,149 +47,149 @@
     {
       "id": 1,
       "creatorId": 1,
-      "listName": "De-engineered discrete matrix",
+      "name": "De-engineered discrete matrix",
       "listTheme": "Violet",
-      "listDesc": "didactic"
+      "desc": "didactic"
     },
     {
       "id": 2,
       "creatorId": 2,
-      "listName": "Persevering systematic moratorium",
+      "name": "Persevering systematic moratorium",
       "listTheme": "Fuscia",
-      "listDesc": "context-sensitive"
+      "desc": "context-sensitive"
     },
     {
       "id": 3,
       "creatorId": 3,
-      "listName": "Intuitive mission-critical capability",
+      "name": "Intuitive mission-critical capability",
       "listTheme": "Red",
-      "listDesc": "static"
+      "desc": "static"
     },
     {
       "id": 4,
       "creatorId": 4,
-      "listName": "Re-contextualized background archive",
+      "name": "Re-contextualized background archive",
       "listTheme": "Pink",
-      "listDesc": "function"
+      "desc": "function"
     },
     {
       "id": 5,
       "creatorId": 5,
-      "listName": "Up-sized value-added initiative",
+      "name": "Up-sized value-added initiative",
       "listTheme": "Purple",
-      "listDesc": "Monitored"
+      "desc": "Monitored"
     },
     {
       "id": 6,
-      "creatorId": 6,
-      "listName": "Secured interactive emulation",
+      "creatorId": 5,
+      "name": "Secured interactive emulation",
       "listTheme": "Red",
-      "listDesc": "Graphic Interface"
+      "desc": "Graphic Interface"
     },
     {
       "id": 7,
       "creatorId": 7,
-      "listName": "Implemented transitional budgetary management",
+      "name": "Implemented transitional budgetary management",
       "listTheme": "Teal",
-      "listDesc": "content-based"
+      "desc": "content-based"
     },
     {
       "id": 8,
       "creatorId": 8,
-      "listName": "Realigned explicit budgetary management",
+      "name": "Realigned explicit budgetary management",
       "listTheme": "Goldenrod",
-      "listDesc": "Focused"
+      "desc": "Focused"
     },
     {
       "id": 9,
       "creatorId": 9,
-      "listName": "Inverse zero tolerance moderator",
+      "name": "Inverse zero tolerance moderator",
       "listTheme": "Goldenrod",
-      "listDesc": "moratorium"
+      "desc": "moratorium"
     },
     {
       "id": 10,
       "creatorId": 10,
-      "listName": "Managed high-level alliance",
+      "name": "Managed high-level alliance",
       "listTheme": "Orange",
-      "listDesc": "bi-directional"
+      "desc": "bi-directional"
     },
     {
       "id": 11,
       "creatorId": 11,
-      "listName": "Triple-buffered local process improvement",
+      "name": "Triple-buffered local process improvement",
       "listTheme": "Mauv",
-      "listDesc": "Persevering"
+      "desc": "Persevering"
     },
     {
       "id": 12,
       "creatorId": 12,
-      "listName": "Total non-volatile customer loyalty",
+      "name": "Total non-volatile customer loyalty",
       "listTheme": "Blue",
-      "listDesc": "didactic"
+      "desc": "didactic"
     },
     {
       "id": 13,
       "creatorId": 13,
-      "listName": "Assimilated even-keeled monitoring",
+      "name": "Assimilated even-keeled monitoring",
       "listTheme": "Pink",
-      "listDesc": "focus group"
+      "desc": "focus group"
     },
     {
       "id": 14,
       "creatorId": 14,
-      "listName": "Expanded system-worthy application",
+      "name": "Expanded system-worthy application",
       "listTheme": "Pink",
-      "listDesc": "encryption"
+      "desc": "encryption"
     },
     {
       "id": 15,
       "creatorId": 15,
-      "listName": "Cross-group full-range challenge",
+      "name": "Cross-group full-range challenge",
       "listTheme": "Purple",
-      "listDesc": "impactful"
+      "desc": "impactful"
     },
     {
       "id": 16,
       "creatorId": 16,
-      "listName": "Progressive executive utilisation",
+      "name": "Progressive executive utilisation",
       "listTheme": "Red",
-      "listDesc": "Ergonomic"
+      "desc": "Ergonomic"
     },
     {
       "id": 17,
       "creatorId": 17,
-      "listName": "Sharable foreground alliance",
+      "name": "Sharable foreground alliance",
       "listTheme": "Goldenrod",
-      "listDesc": "bottom-line"
+      "desc": "bottom-line"
     },
     {
       "id": 18,
       "creatorId": 18,
-      "listName": "Optimized local utilisation",
+      "name": "Optimized local utilisation",
       "listTheme": "Pink",
-      "listDesc": "framework"
+      "desc": "framework"
     },
     {
       "id": 19,
       "creatorId": 19,
-      "listName": "Persevering bifurcated moratorium",
+      "name": "Persevering bifurcated moratorium",
       "listTheme": "Orange",
-      "listDesc": "moratorium"
+      "desc": "moratorium"
     },
     {
       "id": 20,
       "creatorId": 20,
-      "listName": "Synergized object-oriented benchmark",
+      "name": "Synergized object-oriented benchmark",
       "listTheme": "Mauv",
-      "listDesc": "upward-trending"
+      "desc": "upward-trending"
     },
     {
       "id": 21,
       "creatorId": 21,
-      "listName": "Extended foreground challenge",
+      "name": "Extended foreground challenge",
       "listTheme": "Maroon",
-      "listDesc": "Progressive"
+      "desc": "Progressive"
     }
   ],
   "meetupListing": [],

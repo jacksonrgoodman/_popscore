@@ -6,25 +6,24 @@ import userEvent from '@testing-library/user-event';
 
 
 export const ProfileCard = ({ user }) => {
-    console.log("Object Passed Into Profile Card:",user)
+    // console.log("Object Passed Into Profile Card:",user)
 
   return (
     <div className="card">
       <div className="card-content">
         <picture>
-          {/* <img src={require('./dog.svg').default} alt="My Dog" /> */}
+          {/* <img className="logo-navbar"src={require(`{user.pic}`).default} /> */}
         </picture>
-        <h3>User:
+        <h3>
             <span className="card-userName">
                 {user.userName}
             </span>
         </h3>
-        <h5>Hey  
-            <span className="card-userName">
-                {user.name}
-            </span>
+        <h5>
+          <span className="card-bio">
+            About: {user.bio}
+          </span>
         </h5>
-        {/* <h5>{user.name}</h5> */}
       </div>
     </div>
   );

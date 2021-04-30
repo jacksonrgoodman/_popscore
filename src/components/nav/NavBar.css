@@ -34,7 +34,6 @@
 }
 
 .navbar_logout {
-    border: 2px solid red;
     align-items:right;
     flex-grow: 20%;
     /* flex-direction: column-reverse;

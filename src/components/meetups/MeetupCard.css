@@ -1,23 +1,12 @@
 h3,h5 {
     color: greenyellow;
+    margin: 1rem;
 }
 
-.user-card {
+.mymeetups-cards {
     margin: 1rem;
     background: purple;
     border-radius: 1rem;
     border-bottom: 2px solid plum;
     border-right: 2px solid plum;
-}
-
-.welcome{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo {
-    width: 6rem;
-}
-.card-text {
-    margin-top: -1rem;
 }

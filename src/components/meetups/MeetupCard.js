@@ -1,22 +1,22 @@
 import React from 'react';
-import "./ListCard.css";
+import "./MeetupCard.css";
 import { Link } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
 
 
 
-export const ListCard = ({ list }) => {
-    console.log("Object Passed Into List Card:",list)
+export const MeetupCard = ({ meetup }) => {
+    // console.log("Object Passed Into Meetup Card:", meetup)
 
   return (
-    <div className="list-card">
+    <div className="meetup-card">
       <div className="card-content">
         <picture>
           {/* <img src={require('./dog.svg').default} alt="My Dog" /> */}
         </picture>
         <h3>
             <span className="card-name">
-                <p>{list.desc}</p>
+                <p>{meetup.name}</p>
             </span>
         </h3>
         <h5>  
