@@ -3,10 +3,19 @@ h3,h5 {
     margin: 1rem;
 }
 
-.mylists-cards {
+.mymeetups-cards {
     margin: 1rem;
     background: purple;
     border-radius: 1rem;
     border-bottom: 2px solid plum;
     border-right: 2px solid plum;
+}
+.meetup-card-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    margin-top: -1rem;
+}
+.meetup-card-name {
+    text-align: center;
 }

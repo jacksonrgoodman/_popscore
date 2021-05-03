@@ -18,7 +18,7 @@ export const ProfileList = () => {
   const history = useHistory();
   return (
     <>
-    <section className="button"> 
+    <section className="profiles"> 
       <div className="container-cards">
         {/* <ProfileCard /> */}
         {users.map(user => 
