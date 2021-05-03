@@ -9,16 +9,16 @@ export const UserList = () => {
     const [lists, setLists] = useState([]);
     const history = useHistory();
 
-    console.log("List Stored In SetState:", lists)
+    // console.log("List Stored In SetState:", lists)
 
     const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
 
-    console.log("Currently Logged In User From Session Storage:", currentUser)
+    // console.log("Currently Logged In User From Session Storage:", currentUser)
 
     const getUserLists = () => {
-        console.log("CURRENT USER INSIDE getUSERLISTS",currentUser)
+        // console.log("CURRENT USER INSIDE getUSERLISTS",currentUser)
         return getMovieListsByUserId(parseInt(currentUser)).then(listsFromAPI => {
-            console.log("MOVIELISTS BY USER ID API RETURNS:",listsFromAPI)
+            // console.log("MOVIELISTS BY USER ID API RETURNS:",listsFromAPI)
             setLists(listsFromAPI)
         });
     };

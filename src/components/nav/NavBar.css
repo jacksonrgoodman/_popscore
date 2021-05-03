@@ -31,12 +31,12 @@
 .navbar_link{
     color: greenyellow;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
 
 .navbar_logout {
     align-items:right;
     flex-grow: 20%;
-    /* flex-direction: column-reverse;
-    align-self: flex-end; */
+    
     
 }

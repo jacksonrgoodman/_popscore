@@ -10,3 +10,12 @@ h3,h5 {
     border-bottom: 2px solid plum;
     border-right: 2px solid plum;
 }
+.meetup-card-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    margin-top: -1rem;
+}
+.meetup-card-name {
+    text-align: center;
+}

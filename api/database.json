@@ -47,241 +47,86 @@
     {
       "id": 1,
       "creatorId": 1,
-      "name": "De-engineered discrete matrix",
+      "name": "Spielberg's Water-Based Filmography",
       "listTheme": "Violet",
       "desc": "didactic"
     },
     {
       "id": 2,
       "creatorId": 2,
-      "name": "Persevering systematic moratorium",
+      "name": "Fincher Flicks",
       "listTheme": "Fuscia",
       "desc": "context-sensitive"
     },
     {
       "id": 3,
       "creatorId": 3,
-      "name": "Intuitive mission-critical capability",
+      "name": "spike Lee joints",
       "listTheme": "Red",
-      "desc": "static"
+      "desc": "not just Do the Right Thing"
     },
     {
       "id": 4,
       "creatorId": 4,
-      "name": "Re-contextualized background archive",
+      "name": "Lynch Filmography 1988-1994",
       "listTheme": "Pink",
       "desc": "function"
     },
     {
       "id": 5,
       "creatorId": 5,
-      "name": "Up-sized value-added initiative",
+      "name": "Action Films",
       "listTheme": "Purple",
       "desc": "Monitored"
     },
     {
       "id": 6,
       "creatorId": 5,
-      "name": "Secured interactive emulation",
+      "name": "Westerns",
       "listTheme": "Red",
       "desc": "Graphic Interface"
-    },
-    {
-      "id": 7,
-      "creatorId": 7,
-      "name": "Implemented transitional budgetary management",
-      "listTheme": "Teal",
-      "desc": "content-based"
-    },
-    {
-      "id": 8,
-      "creatorId": 8,
-      "name": "Realigned explicit budgetary management",
-      "listTheme": "Goldenrod",
-      "desc": "Focused"
-    },
-    {
-      "id": 9,
-      "creatorId": 9,
-      "name": "Inverse zero tolerance moderator",
-      "listTheme": "Goldenrod",
-      "desc": "moratorium"
-    },
-    {
-      "id": 10,
-      "creatorId": 10,
-      "name": "Managed high-level alliance",
-      "listTheme": "Orange",
-      "desc": "bi-directional"
-    },
-    {
-      "id": 11,
-      "creatorId": 11,
-      "name": "Triple-buffered local process improvement",
-      "listTheme": "Mauv",
-      "desc": "Persevering"
-    },
-    {
-      "id": 12,
-      "creatorId": 12,
-      "name": "Total non-volatile customer loyalty",
-      "listTheme": "Blue",
-      "desc": "didactic"
-    },
-    {
-      "id": 13,
-      "creatorId": 13,
-      "name": "Assimilated even-keeled monitoring",
-      "listTheme": "Pink",
-      "desc": "focus group"
-    },
-    {
-      "id": 14,
-      "creatorId": 14,
-      "name": "Expanded system-worthy application",
-      "listTheme": "Pink",
-      "desc": "encryption"
-    },
-    {
-      "id": 15,
-      "creatorId": 15,
-      "name": "Cross-group full-range challenge",
-      "listTheme": "Purple",
-      "desc": "impactful"
-    },
-    {
-      "id": 16,
-      "creatorId": 16,
-      "name": "Progressive executive utilisation",
-      "listTheme": "Red",
-      "desc": "Ergonomic"
-    },
-    {
-      "id": 17,
-      "creatorId": 17,
-      "name": "Sharable foreground alliance",
-      "listTheme": "Goldenrod",
-      "desc": "bottom-line"
-    },
-    {
-      "id": 18,
-      "creatorId": 18,
-      "name": "Optimized local utilisation",
-      "listTheme": "Pink",
-      "desc": "framework"
-    },
-    {
-      "id": 19,
-      "creatorId": 19,
-      "name": "Persevering bifurcated moratorium",
-      "listTheme": "Orange",
-      "desc": "moratorium"
-    },
-    {
-      "id": 20,
-      "creatorId": 20,
-      "name": "Synergized object-oriented benchmark",
-      "listTheme": "Mauv",
-      "desc": "upward-trending"
-    },
-    {
-      "id": 21,
-      "creatorId": 21,
-      "name": "Extended foreground challenge",
-      "listTheme": "Maroon",
-      "desc": "Progressive"
     }
   ],
   "meetupListing": [],
   "meetups": [
     {
       "id": 1,
-      "name": "Fisher, Beer and Jones",
+      "name": "Fishy Friends Cinema Club",
       "address": "49 Chive Court",
-      "creatorId": 1,
+      "userId": 1,
       "movieListId": 1,
       "date": "4/30/2020",
-      "description": "internet solution",
+      "description": "fun in the sun this summer!",
       "isFull": false
     },
     {
       "id": 2,
-      "name": "O'Connell-Hessel",
+      "name": "Finch-O-Rama",
       "address": "13822 North Parkway",
-      "creatorId": 2,
+      "userId": 2,
       "movieListId": 2,
       "date": "2/7/2021",
-      "description": "model",
+      "description": "Fincher Films. Simple As.",
       "isFull": false
     },
     {
       "id": 3,
-      "name": "Williamson, Lynch and Walker",
+      "name": "spike lee joints @ MTSU",
       "address": "1 Shelley Alley",
-      "creatorId": 3,
+      "userId": 3,
       "movieListId": 3,
       "date": "5/7/2020",
-      "description": "stable",
+      "description": "not just 'Do the Right Thing'",
       "isFull": false
     },
     {
       "id": 4,
-      "name": "Lindgren, Simonis and McClure",
+      "name": "Black Lodge Cinema Club",
       "address": "6962 Logan Circle",
-      "creatorId": 4,
+      "userId": 4,
       "movieListId": 4,
       "date": "9/4/2020",
-      "description": "knowledge user",
-      "isFull": false
-    },
-    {
-      "id": 5,
-      "name": "Baumbach, Koch and Wolff",
-      "address": "5497 Stone Corner Parkway",
-      "creatorId": 5,
-      "movieListId": 5,
-      "date": "3/18/2020",
-      "description": "full-range",
-      "isFull": false
-    },
-    {
-      "id": 6,
-      "name": "Nikolaus, Thiel and Ondricka",
-      "address": "306 Westend Avenue",
-      "creatorId": 6,
-      "movieListId": 6,
-      "date": "9/26/2020",
-      "description": "Assimilated",
-      "isFull": false
-    },
-    {
-      "id": 7,
-      "name": "Weber, Spencer and Upton",
-      "address": "70 Butternut Point",
-      "creatorId": 7,
-      "movieListId": 7,
-      "date": "7/8/2020",
-      "description": "next generation",
-      "isFull": false
-    },
-    {
-      "id": 8,
-      "name": "Gleason-Weber",
-      "address": "7074 Ludington Way",
-      "creatorId": 8,
-      "movieListId": 8,
-      "date": "4/22/2020",
-      "description": "Intuitive",
-      "isFull": false
-    },
-    {
-      "id": 9,
-      "name": "Jakubowski Inc",
-      "address": "62538 Thackeray Lane",
-      "creatorId": 9,
-      "movieListId": 9,
-      "date": "9/20/2020",
-      "description": "24/7",
+      "description": "Best of David Lynch",
       "isFull": false
     }
   ]

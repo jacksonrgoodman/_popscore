@@ -1,11 +1,11 @@
 import { remoteURL } from "./tools"
 
-export const getAllLists = () => {
-    return fetch(`${remoteURL}/meetups`)
+export const getAllMeetups = () => {
+    return fetch(`${remoteURL}/meetups?_expand=user&_expand=movieList`)
     .then(result => result.json())
 }
 
 export const getMeetupsByUserId = (id) => {
-    return fetch(`${remoteURL}/meetups/?creatorId=${id}`)
+    return fetch(`${remoteURL}/meetups/?userId=${id}`)
     .then(res => res.json())
 }

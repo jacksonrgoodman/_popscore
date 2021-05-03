@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MeetupCard } from './MeetupCard';
+import { UserMeetupCard } from './UserMeetupCard';
 import { getAllMeetups, remove, getMeetupsByUserId } from '../../modules/MeetupManager.js';
 import { useHistory } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
@@ -34,8 +34,8 @@ export const UserMeetup = () => {
     <section className="meetups"> 
       <div className="mymeetups-cards">
       <h3>My Meetups:</h3>
-      {meetups.map(meetups => 
-            <MeetupCard key={meetups.id} meetup={meetups}/>)}
+      {meetups.map(meetup => 
+            <UserMeetupCard key={meetup.id} meetup={meetup}/>)}
         </div>
         </section>
     </>

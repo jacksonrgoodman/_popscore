@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { ProfileCard } from './ProfileCard';
-import { getAllUsers, remove, getUserById } from '../../modules/UserManager.js';
+import { MeetupCard } from './MeetupCard';
+import { getAllMeetups, remove, getUserById } from '../../modules/MeetupManager.js';
 import { useHistory } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
 
 
-export const ProfileList = () => {
-  const [users, setUsers] = useState([]);
-  const getUsers = () => {
-    return getAllUsers().then(usersFromAPI => {
-      setUsers(usersFromAPI)
+export const MeetupList = () => {
+  const [meetups, setMeetups] = useState([]);
+  const getMeetups = () => {
+    return getAllMeetups().then(meetupsFromAPI => {
+      setMeetups(meetupsFromAPI)
     });
   };
   useEffect(() => {
-    getUsers();
+    getMeetups();
   }, []);
   const history = useHistory();
   return (
@@ -21,9 +21,9 @@ export const ProfileList = () => {
     <section className="button"> 
       <div className="container-cards">
         {/* <ProfileCard /> */}
-        {users.map(user => 
-          <ProfileCard
-            key={user.id} user={user}/>)}
+        {meetups.map(meetup => 
+          <MeetupCard
+            key={meetup.id} meetup={meetup}/>)}
         </div>
         </section>
     </>

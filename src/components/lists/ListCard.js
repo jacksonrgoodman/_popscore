@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event';
 
 
 export const ListCard = ({ list }) => {
-    console.log("Object Passed Into List Card:",list)
+    // console.log("Object Passed Into List Card:",list)
 
   return (
     <div className="list-card">
@@ -16,7 +16,7 @@ export const ListCard = ({ list }) => {
         </picture>
         <h3>
             <span className="card-name">
-                <p>{list.desc}</p>
+                <p>{list.name}</p>
             </span>
         </h3>
         <h5>  

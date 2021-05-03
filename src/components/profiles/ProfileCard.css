@@ -2,7 +2,7 @@ h3,h5 {
     color: greenyellow;
 }
 
-.user-card {
+.user-card, .all-user-profiles, .all-meetup-cards {
     margin: 1rem;
     background: purple;
     border-radius: 1rem;
@@ -15,9 +15,21 @@ h3,h5 {
     align-items: center;
     justify-content: center;
 }
+
+.card-userName {
+    margin-bottom: -1rem;
+}
+
 .logo {
     width: 6rem;
 }
 .card-text {
+    margin-top: -1rem;
+}
+
+.all-user-cards-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
     margin-top: -1rem;
 }
