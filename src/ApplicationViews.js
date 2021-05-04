@@ -8,7 +8,7 @@ import { ProfileList } from "./components/profiles/ProfileList"
 
 import { UserList } from "./components/lists/UserList"
 import { MeetupList } from "./components/meetups/MeetupList"
-//import { ListList } from "./components/lists/ListList"
+import { ListList } from "./components/lists/ListList"
 
 import { UserMeetup } from "./components/meetups/UserMeetup"
 
@@ -35,6 +35,9 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             </Route>
             <Route exact path="/meetups">
               <MeetupList />
+            </Route>
+            <Route exact path="/lists">
+              <ListList />
             </Route>
             <Route exact path="/profiles">
               <ProfileList setAuthUser={setAuthUser}/> 

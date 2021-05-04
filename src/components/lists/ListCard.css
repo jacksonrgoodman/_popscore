@@ -3,7 +3,7 @@ h3,h5 {
     margin: 1rem;
 }
 
-.mylists-cards {
+.mylists-cards, .all-list-card-box {
     margin: 1rem;
     background: purple;
     border-radius: 1rem;

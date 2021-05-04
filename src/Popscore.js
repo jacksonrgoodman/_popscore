@@ -17,7 +17,7 @@ export const Popscore = () => {
     const clearUser = () => {
         sessionStorage.clear();
         setIsAuthenticated(sessionStorage.getItem("popscore_User") !== null)
-      }
+    }
 
     return (
         <>

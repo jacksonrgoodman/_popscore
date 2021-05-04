@@ -1,6 +1,5 @@
 h3,h5 {
     color: greenyellow;
-    margin: 1rem;
 }
 
 .mymeetups-cards {
@@ -18,4 +17,17 @@ h3,h5 {
 }
 .meetup-card-name {
     text-align: center;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.card-highlight {
+    color: lightskyblue;
+    display: flex;
+    justify-content: center;
 }

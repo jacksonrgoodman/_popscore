@@ -15,7 +15,7 @@ export const UserMeetupCard = ({ meetup }) => {
           {/* <img src={require('./dog.svg').default} alt="My Dog" /> */}
         </picture>
         <span className="meetup-card-name">
-            <p>{meetup.name}</p>
+            <h3><p>{meetup.name}</p></h3>
         </span>
       </div>
     </div>

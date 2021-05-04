@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { ProfileCard } from './ProfileCard';
-import { getAllUsers, remove, getUserById } from '../../modules/UserManager.js';
+import { ListCard } from './ListCard';
+import { getAllLists, remove, getUserById } from '../../modules/ListManager.js';
 import { useHistory } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
 
 
-export const ProfileList = () => {
-  const [users, setUsers] = useState([]);
-  const getUsers = () => {
-    return getAllUsers().then(usersFromAPI => {
-      setUsers(usersFromAPI)
+export const ListList = () => {
+  const [lists, setLists] = useState([]);
+  const getLists = () => {
+    return getAllLists().then(listsFromAPI => {
+      setLists(listsFromAPI)
     });
   };
   useEffect(() => {
-    getUsers();
+    getLists();
   }, []);
   const history = useHistory();
   return (
@@ -21,9 +21,9 @@ export const ProfileList = () => {
     <section className="button"> 
       <div className="container-cards">
         {/* <ProfileCard /> */}
-        {users.map(user => 
-          <ProfileCard
-            key={user.id} user={user}/>)}
+        {lists.map(list => 
+          <ListCard
+            key={list.id} list={list}/>)}
         </div>
         </section>
     </>

@@ -17,16 +17,16 @@ export const UserCard = ({ user }) => {
           <img src={(user.pic).default} alt="Profile Picture" />
         </picture> */}
         <div className="card-text">
-          <h3>
+          <h2>
             <span className="card-userName">
               User: {user.userName}
             </span>
-          </h3>
-          <h5>  
+          </h2>
+          <h3>  
             <span className="card-name">
-              Hi {user.name}!
+              <p>Hi {user.name}!</p>
             </span>
-          </h5>
+          </h3>
         </div>
       </div>
     </div>

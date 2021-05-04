@@ -21,10 +21,10 @@ export const ProfileCard = ({ user }) => {
         </h3>
         <div className="all-user-cards-body">
             <span className="card-bio">
-              <h5>About: {user.bio}</h5>
+              <p className="card-highlight">About: </p><p>{user.bio}</p>
             </span>
             <span className="card-email" >
-              <h5>Email: {user.email}</h5>
+              <p className="card-highlight">Email: </p><p>{user.email}</p>
             </span>
         </div>
       </div>
