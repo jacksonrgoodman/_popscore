@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { UserListCard } from './UserListCard';
 import { getAllLists, remove, getMovieListsByUserId } from '../../modules/ListManager.js';
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
 
 
@@ -31,7 +32,14 @@ export const UserList = () => {
     <>
         <section className="lists"> 
             <div className="mylists-cards">
-                <h3>My Lists:</h3>  
+            <div>
+                <div className="corner-button-bin">
+                    <Link to="/meetups/create"><button className="corner-button">Add List</button></Link>
+                </div>
+                <div className="user-meetup-head">
+                <h3 className="my-meetups-title">My Lists:</h3>
+                </div>
+            </div>  
                 {lists.map(lists => 
                     <UserListCard key={lists.id} list={lists}/>)}
             </div>

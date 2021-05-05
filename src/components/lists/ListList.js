@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ListCard } from './ListCard';
 import { getAllLists, remove, getUserById } from '../../modules/ListManager.js';
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
 
 
@@ -18,7 +19,8 @@ export const ListList = () => {
   const history = useHistory();
   return (
     <>
-    <section className="button"> 
+    <section className="button">
+    <Link to="/lists/create"><button className="button-close">Add List</button></Link> 
       <div className="container-cards">
         {/* <ProfileCard /> */}
         {lists.map(list => 

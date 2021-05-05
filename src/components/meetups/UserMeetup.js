@@ -3,6 +3,7 @@ import { UserMeetupCard } from './UserMeetupCard';
 import { getAllMeetups, remove, getMeetupsByUserId } from '../../modules/MeetupManager.js';
 import { useHistory } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
+import { Link } from "react-router-dom";
 
 import "./MeetupCard.css"
 
@@ -32,12 +33,20 @@ export const UserMeetup = () => {
   return (
     <>
     <section className="meetups"> 
-      <div className="mymeetups-cards">
-      <h3>My Meetups:</h3>
-      {meetups.map(meetup => 
-            <UserMeetupCard key={meetup.id} meetup={meetup}/>)}
+        <div className="mymeetups-cards">
+            <div>
+                <div className="corner-button-bin">
+                    <Link to="/meetups/create"><button className="corner-button">Add Meetup</button></Link>
+                </div>
+                <div className="user-meetup-head">
+                    <h3 className="my-meetups-title">My Meetups:</h3>
+                </div>
+            </div>
+            {meetups.map(meetup => 
+                <UserMeetupCard key={meetup.id} meetup={meetup}/>)
+            }
         </div>
-        </section>
+    </section>
     </>
     );
 };

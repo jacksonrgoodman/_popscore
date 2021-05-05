@@ -6,6 +6,33 @@ export const getAllLists = () => {
 }
 
 export const getMovieListsByUserId = (id) => {
-    return fetch(`${remoteURL}/movieLists/?creatorId=${id}`)
+    // console.log("ID PASSED INTO MOVIELIST BY ID FETCH",id)
+    return fetch(`${remoteURL}/movieLists/?userId=${id}`)
     .then(res => res.json())
+}
+
+export const addList = (newList) => {
+    return fetch(`${remoteURL}/movieLists`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newList)
+    }).then(response => response.json())
+}
+  
+export const updateList = (editedList) =>{
+    return fetch(`${remoteURL}/movieLists/${editedList.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedList)
+    }).then(data => data.json());
+}
+  
+export const deleteList = (id) => {
+    return fetch(`${remoteURL}/movieLists/${id}`, {
+      method: "DELETE"
+    }).then(result => result.json())
 }

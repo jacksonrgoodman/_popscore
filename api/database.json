@@ -95,6 +95,7 @@
       "address": "49 Chive Court",
       "userId": 1,
       "movieListId": 1,
+      "time": "13:21",
       "date": "4/30/2020",
       "description": "fun in the sun this summer!",
       "isFull": false
@@ -105,16 +106,18 @@
       "address": "13822 North Parkway",
       "userId": 2,
       "movieListId": 2,
+      "time": "13:21",
       "date": "2/7/2021",
       "description": "Fincher Films. Simple As.",
       "isFull": false
     },
     {
       "id": 3,
-      "name": "spike lee joints @ MTSU",
+      "name": "Movie Night MTSU",
       "address": "1 Shelley Alley",
       "userId": 3,
       "movieListId": 3,
+      "time": "13:21",
       "date": "5/7/2020",
       "description": "BRAGG 103",
       "isFull": false
@@ -125,6 +128,7 @@
       "address": "6962 Logan Circle",
       "userId": 4,
       "movieListId": 4,
+      "time": "13:21",
       "date": "9/4/2020",
       "description": "Best of David Lynch",
       "isFull": false
@@ -135,6 +139,7 @@
       "address": "6962 Logan Circle",
       "userId": 5,
       "movieListId": 5,
+      "time": "13:21",
       "date": "9/4/2020",
       "description": "Movies My Dad Likes",
       "isFull": false

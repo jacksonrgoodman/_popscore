@@ -7,10 +7,12 @@ import { UserProfile } from "./components/profiles/UserProfile"
 import { ProfileList } from "./components/profiles/ProfileList"
 
 import { UserList } from "./components/lists/UserList"
-import { MeetupList } from "./components/meetups/MeetupList"
 import { ListList } from "./components/lists/ListList"
+import { ListForm } from "./components/lists/AddList"
 
 import { UserMeetup } from "./components/meetups/UserMeetup"
+import { MeetupList } from "./components/meetups/MeetupList"
+import { MeetupForm } from "./components/meetups/AddMeetup"
 
 export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
@@ -19,7 +21,7 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             <Route path="/login">
 	          <Login setAuthUser={setAuthUser}/>
             </Route>
-            <Route path="/register">
+            <Route exact path="/register">
 	          <Register setAuthUser={setAuthUser}/>
             </Route>
             <Route exact path="/">
@@ -33,16 +35,40 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
               <Login setAuthUser={setAuthUser}/>
               }
             </Route>
-            <Route exact path="/meetups">
-              <MeetupList />
+
+            <Route exact path="/meetups/:meetupId(\d+)">
+                {/* <MeetupDetail /> */}
             </Route>
+
+            <Route path="/meetups/create">
+                <MeetupForm />
+            </Route>
+
+            <Route path="/meetups/:meetupId(\d+)/edit">
+                {/* <MeetupEditForm /> */}
+            </Route>
+
+            <Route exact path="/meetups">
+              <MeetupList setAuthUser={setAuthUser}/>
+            </Route>
+
+            <Route exact path="/lists/:listId(\d+)">
+                {/* <ListDetail /> */}
+            </Route>
+
+            <Route path="/lists/create">
+                <ListForm />
+            </Route>
+
+            <Route path="/lists/:listId(\d+)/edit">
+                {/* <ListEditForm /> */}
+            </Route>
+
             <Route exact path="/lists">
-              <ListList />
+              <ListList setAuthUser={setAuthUser}/>
             </Route>
             <Route exact path="/profiles">
               <ProfileList setAuthUser={setAuthUser}/> 
-            </Route>
-            <Route path="/register"> 
             </Route>
         </>
     )
