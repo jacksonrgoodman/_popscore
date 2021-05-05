@@ -46,42 +46,42 @@
   "movieLists": [
     {
       "id": 1,
-      "creatorId": 1,
+      "userId": 1,
       "name": "Spielberg's Water-Based Filmography",
       "listTheme": "Violet",
       "desc": "didactic"
     },
     {
       "id": 2,
-      "creatorId": 2,
+      "userId": 2,
       "name": "Fincher Flicks",
       "listTheme": "Fuscia",
       "desc": "context-sensitive"
     },
     {
       "id": 3,
-      "creatorId": 3,
+      "userId": 3,
       "name": "spike Lee joints",
       "listTheme": "Red",
       "desc": "not just Do the Right Thing"
     },
     {
       "id": 4,
-      "creatorId": 4,
+      "userId": 4,
       "name": "Lynch Filmography 1988-1994",
       "listTheme": "Pink",
       "desc": "function"
     },
     {
       "id": 5,
-      "creatorId": 5,
+      "userId": 5,
       "name": "Action Films",
       "listTheme": "Purple",
       "desc": "Monitored"
     },
     {
       "id": 6,
-      "creatorId": 5,
+      "userId": 5,
       "name": "Westerns",
       "listTheme": "Red",
       "desc": "Graphic Interface"
@@ -116,7 +116,7 @@
       "userId": 3,
       "movieListId": 3,
       "date": "5/7/2020",
-      "description": "not just 'Do the Right Thing'",
+      "description": "BRAGG 103",
       "isFull": false
     },
     {
@@ -127,6 +127,16 @@
       "movieListId": 4,
       "date": "9/4/2020",
       "description": "Best of David Lynch",
+      "isFull": false
+    },
+    {
+      "id": 6,
+      "name": "Dad's Picks Cinema Club",
+      "address": "6962 Logan Circle",
+      "userId": 5,
+      "movieListId": 5,
+      "date": "9/4/2020",
+      "description": "Movies My Dad Likes",
       "isFull": false
     }
   ]

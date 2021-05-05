@@ -26,10 +26,3 @@ h3,h5 {
 .card-text {
     margin-top: -1rem;
 }
-
-.all-user-cards-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0rem;
-    margin-top: -1rem;
-}

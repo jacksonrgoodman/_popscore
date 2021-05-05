@@ -17,33 +17,33 @@ export const MeetupCard = ({ meetup }) => {
         <span className="card-name">
           <h3>
             {meetup.name}
+          <p>{meetup.description}</p>
           </h3>
         </span>
         
         <span className="card-detail">
-          <p>
-            On:
-              <p>
+          <p className="card-highlight">
+            On:&nbsp;
+          </p>
+              <p className="generated-detail">
                 {meetup.date}
               </p>
-          </p>
         </span>
         <span className="card-detail">
-          <p>
-            By: 
-              <p>
-                {/* {meetup.user.name} */}
-                {meetup.userId}
+          <p className="card-highlight">
+            Organized By:&nbsp; 
+          </p>
+              <p className=" meetup-username">
+                {meetup.user.userName}
               </p>
-          </p>
         </span>
         <span className="card-detail">
-          <p>
-            Marquee:
-              <p>
+          <p className="card-highlight">
+            Marquee:&nbsp;
+          </p>
+              <p className="generated-detail">
                 {meetup.movieList.name}
               </p>
-          </p>
         </span>
         {/* <h5>{user.name}</h5> */}
       </div>

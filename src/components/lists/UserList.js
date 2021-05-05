@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ListCard } from './ListCard';
+import { UserListCard } from './UserListCard';
 import { getAllLists, remove, getMovieListsByUserId } from '../../modules/ListManager.js';
 import { useHistory } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
@@ -33,7 +33,7 @@ export const UserList = () => {
             <div className="mylists-cards">
                 <h3>My Lists:</h3>  
                 {lists.map(lists => 
-                    <ListCard key={lists.id} list={lists}/>)}
+                    <UserListCard key={lists.id} list={lists}/>)}
             </div>
         </section>
     </>

@@ -5,23 +5,23 @@ import userEvent from '@testing-library/user-event';
 
 
 
-export const ListCard = ({ list }) => {
+export const UserListCard = ({ list }) => {
     // console.log("Object Passed Into List Card:",list)
 
   return (
-    <div className="all-list-cards">
-      <div className="all-list-card-box">
+    <div className="my-list-cards">
+      <div className="list-card-content">
         <picture>
           {/* <img src={require('./dog.svg').default} alt="My Dog" /> */}
         </picture>
         <h3>
-            <span className="card-name">
-                {list.name}
+            <span className="list-card-name">
+                <p>{list.name}</p>
             </span>
         </h3>
         <h5>  
-            <span className="card-detail">
-                <p><p className="card-highlight">Curated By:</p>{list.user.userName}</p>
+            <span className="list-card-detail">
+                {/* {movieList.creatorId.userName} */}
             </span>
         </h5>
         {/* <h5>{user.name}</h5> */}

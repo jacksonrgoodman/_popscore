@@ -1,7 +1,7 @@
 import { remoteURL } from "./tools"
 
 export const getAllLists = () => {
-    return fetch(`${remoteURL}/movieLists`)
+    return fetch(`${remoteURL}/movieLists?_expand=user`)
     .then(result => result.json())
 }
 
