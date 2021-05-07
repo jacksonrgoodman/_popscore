@@ -25,7 +25,7 @@ export const Login = ({setAuthUser}) => {
                     setAuthUser(exists)
                     history.push("/")
                 } else {
-                    // existDialog.current.showModal()
+                    existDialog.current.showModal()
                 }
             })
     }
@@ -60,7 +60,7 @@ export const Login = ({setAuthUser}) => {
                 </form>
             </section>
             <section className="link-register">
-                <button className="button-close" to="/register">Register?</button>
+                <Link  to="/register"><button className="button-close">Register?</button></Link>
             </section>
         </main>
     )

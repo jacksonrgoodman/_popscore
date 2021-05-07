@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MeetupCard } from './MeetupCard';
+import { Link } from "react-router-dom";
 import { getAllMeetups, remove, getUserById } from '../../modules/MeetupManager.js';
 import { useHistory } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
@@ -18,14 +19,16 @@ export const MeetupList = () => {
   const history = useHistory();
   return (
     <>
-    <section className="button"> 
-      <div className="container-cards">
-        {/* <ProfileCard /> */}
-        {meetups.map(meetup => 
-          <MeetupCard
-            key={meetup.id} meetup={meetup}/>)}
+      <section className="button"> 
+        <div className="container-cards">
+          <Link className="container-cards" to="/meetups/create"><button className="button-add">Add Meetup</button></Link>
+          {meetups.map(meetup => 
+            <MeetupCard
+              key={meetup.id} meetup={meetup}
+            />)
+          }
         </div>
-        </section>
+      </section>
     </>
     );
 };

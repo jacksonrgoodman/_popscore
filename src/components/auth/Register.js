@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import { useHistory } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import {remoteURL} from "../../modules/tools"
 import "./Login.css"
 
@@ -46,6 +46,7 @@ export const Register = ({setAuthUser}) => {
                         })
                 }
                 else {
+                    console.log(conflictDialog.current)
                     conflictDialog.current.showModal()
                 }
             })
@@ -55,13 +56,14 @@ export const Register = ({setAuthUser}) => {
     return (
         <main style={{ textAlign: "center" }}>
 
-            {/* <dialog className="dialog dialog-password" ref={conflictDialog}>
-                <h2 className=".dialog-message">An Account With That Email Address Already Exists</h2>
+            <dialog className="dialog dialog-auth" ref={conflictDialog}>
+                <h2 className="dialog dialog-message">That Email Is Already In Use!</h2>
                 <button className="button-close" onClick={e => conflictDialog.current.close()}>CLOSE</button>
-            </dialog> */}
+            </dialog>
 
-            <form className="form-login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Sign Up to 🍿_popscore</h1>
+            <form className="form-register" onSubmit={handleRegister}>
+            <img className="logo-login" src={require('./logo_popscore_login.png').default} />
+                <h1 className="h3 mb-3 font-weight-normal">Sign Up Here!</h1>
                 <fieldset>
                     <label htmlFor="userName"> User Name: </label>
                     <input ref={userName} type="text" name="userName" className="register-input userName" placeholder="User Name" required autoFocus />
@@ -82,6 +84,7 @@ export const Register = ({setAuthUser}) => {
                     <button className="button-close" type="submit"> Register! </button>
                 </fieldset>
             </form>
+            <Link to="/"><button className="button-close" >Back To Login</button></Link>
         </main>
     )
 }
