@@ -19,15 +19,16 @@ export const MeetupList = () => {
   const history = useHistory();
   return (
     <>
-    <section className="button"> 
-      <div className="container-cards">
-        {/* <ProfileCard /> */}
-        <Link to="/meetups/create"><button className="button-close">Add Meetup</button></Link>
-        {meetups.map(meetup => 
-          <MeetupCard
-            key={meetup.id} meetup={meetup}/>)}
+      <section className="button"> 
+        <div className="container-cards">
+          <Link className="container-cards" to="/meetups/create"><button className="button-add">Add Meetup</button></Link>
+          {meetups.map(meetup => 
+            <MeetupCard
+              key={meetup.id} meetup={meetup}
+            />)
+          }
         </div>
-        </section>
+      </section>
     </>
     );
 };

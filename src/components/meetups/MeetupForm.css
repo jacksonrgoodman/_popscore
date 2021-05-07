@@ -26,6 +26,14 @@ h3,h5 {
     margin-top: 0;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alignLeft {
+    flex-direction: row-reverse;
+}
 .card-highlight {
     color: lightskyblue;
     display: flex;

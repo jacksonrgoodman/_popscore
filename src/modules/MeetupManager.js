@@ -5,6 +5,11 @@ export const getAllMeetups = () => {
     .then(result => result.json())
 }
 
+export const getMeetup = (id) => {
+    return fetch(`${remoteURL}/meetups/${id}?_expand=user`)
+    .then(res => res.json())
+}
+
 export const getMeetupsByUserId = (id) => {
     return fetch(`${remoteURL}/meetups/?userId=${id}`)
     .then(res => res.json())

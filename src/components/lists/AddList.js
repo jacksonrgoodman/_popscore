@@ -13,7 +13,7 @@ export const ListForm = () => {
 		name: "",
 		desc:"",
         userId: currentUser,
-        listTheme:""
+        listTheme:"XXX"
 	});
 
 	const [isLoading, setIsLoading] = useState(false);
@@ -76,7 +76,7 @@ export const ListForm = () => {
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="description">Description:</label>
-					<input type="text" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="List description" value={list.description} />
+					<input type="text" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="List description" value={list.desc} />
 				</div>
 			</fieldset>
 			

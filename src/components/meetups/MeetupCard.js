@@ -6,17 +6,21 @@ import userEvent from '@testing-library/user-event';
 
 
 export const MeetupCard = ({ meetup }) => {
-    // console.log("Object Passed Into Meetup Card:", meetup)
+  // console.log("Object Passed Into Meetup Card:", meetup)
+  const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
 
   return (
     <div className="all-meetup-cards">
       <div className="card-content">
-        <picture>
-          {/* <img src={require('./dog.svg').default} alt="My Dog" /> */}
-        </picture>
+        <div>
+        {currentUser === meetup.user.id ?
+        <Link className="container-cards" to={`/meetups/${meetup.id}/edit`}><button className="corner-button">Edit Meetup</button></Link>
+        :""
+      }</div>
         <span className="card-name">
           <h3>
             {meetup.name}
+            <p>{meetup.time}</p>
           <p>{meetup.description}</p>
           </h3>
         </span>
@@ -27,6 +31,14 @@ export const MeetupCard = ({ meetup }) => {
           </p>
               <p className="generated-detail">
                 {meetup.date}
+              </p>
+        </span>
+        <span className="card-detail">
+          <p className="card-highlight">
+            At:&nbsp;
+          </p>
+              <p className="generated-detail">
+                {meetup.address}
               </p>
         </span>
         <span className="card-detail">

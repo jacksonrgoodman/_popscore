@@ -5,6 +5,11 @@ export const getAllLists = () => {
     .then(result => result.json())
 }
 
+export const getList = (id) => {
+    return fetch(`${remoteURL}/movieLists/${id}`)
+    .then(res => res.json())
+}
+
 export const getMovieListsByUserId = (id) => {
     // console.log("ID PASSED INTO MOVIELIST BY ID FETCH",id)
     return fetch(`${remoteURL}/movieLists/?userId=${id}`)

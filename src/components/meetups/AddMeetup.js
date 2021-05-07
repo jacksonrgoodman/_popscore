@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
+import { getMovieListsByUserId } from '../../modules/ListManager';
 import { addMeetup } from '../../modules/MeetupManager';
 
 import './MeetupForm.css'
@@ -9,13 +10,14 @@ export const MeetupForm = () => {
 	// Define the initial state of the form inputs with useState()
 
     const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
+	const [lists, setLists] = useState([]);
 	const [meetup, setMeetup] = useState({
 		name: "",
 		address: "",
         date:"",
         time:"",
         userId: currentUser,
-        movieListId: 1,
+        movieListId: "",
         isFull: false
 	});
 
@@ -47,8 +49,11 @@ export const MeetupForm = () => {
 	}
 
     useEffect(() => {
-		
-	}, []);
+		getMovieListsByUserId(currentUser)
+		.then(listsFromAPI => {
+			setLists(listsFromAPI)
+		})
+}, []);
 
 
 	const handleClickSaveMeetup = (event) => {
@@ -86,55 +91,34 @@ export const MeetupForm = () => {
 				<div className="form-group">
 					<label htmlFor="location">Address: </label>
                     <input type="text" id="address" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Meetup Address" value={meetup.address} />
-					{/* <select value={meetup.locationId} name="locationId" id="locationId" onChange={handleControlledInputChange} className="form-control" >
-						<option value="0">Select a location</option>
-						{locations.map(l => (
-                            <option key={l.id} value={l.id}>
-                            {l.name}
-							</option>
-                            ))}
-                        </select> */}
+					
 				</div>
 			</fieldset>
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="location">Time: </label>
                     <input type="time" id="time" onChange={handleControlledInputChange} required autoFocus className="form-control" value={meetup.time} />
-					{/* <select value={meetup.locationId} name="locationId" id="locationId" onChange={handleControlledInputChange} className="form-control" >
-						<option value="0">Select a location</option>
-						{locations.map(l => (
-                            <option key={l.id} value={l.id}>
-                            {l.name}
-							</option>
-                            ))}
-                        </select> */}
+					
 				</div>
 			</fieldset>
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="customerId">Date: </label>
                     <input type="date" id="date" onChange={handleControlledInputChange} required autoFocus className="form-control" value={meetup.date} />
-					{/* <select value={meetup.customerId} name="customer" id="customerId" onChange={handleControlledInputChange} className="form-control" >
-						<option value="0">Select a customer</option>
-						{customers.map(c => (
-							<option key={c.id} value={c.id}>
-								{c.name}
-							</option>
-						))}
-					</select> */}
+					
 				</div>
 			</fieldset>
 			<fieldset>
 				<div className="form-group">
-					<label htmlFor="employeeId">Add From My Movie List: </label>
-					{/* <select value={meetup.employeeId} name="employee" id="employeeId" onChange={handleControlledInputChange} className="form-control" >
-						<option value="0">Select a employee</option>
-						{employees.map(e => (
-							<option key={e.id} value={e.id}>
-								{e.name}
+					<label htmlFor="listId">Add List From My Lists: </label>
+					<select value={meetup.movieListId} name="list" id="movieListId" onChange={handleControlledInputChange} className="form-control" >
+						<option value="0">Select a list</option>
+						{lists.map(l => (
+							<option kly={l.id} value={l.id}>
+								{l.name}
 							</option>
 						))}
-					</select> */}
+					</select>
 				</div>
 			</fieldset>
 			<button className="corner-button"

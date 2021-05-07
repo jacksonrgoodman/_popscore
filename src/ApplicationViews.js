@@ -9,10 +9,12 @@ import { ProfileList } from "./components/profiles/ProfileList"
 import { UserList } from "./components/lists/UserList"
 import { ListList } from "./components/lists/ListList"
 import { ListForm } from "./components/lists/AddList"
+import { ListEditForm } from "./components/lists/EditList"
 
 import { UserMeetup } from "./components/meetups/UserMeetup"
 import { MeetupList } from "./components/meetups/MeetupList"
 import { MeetupForm } from "./components/meetups/AddMeetup"
+import { MeetupEditForm } from "./components/meetups/EditMeetup"
 
 export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
@@ -45,14 +47,14 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             </Route>
 
             <Route path="/meetups/:meetupId(\d+)/edit">
-                {/* <MeetupEditForm /> */}
+                <MeetupEditForm />
             </Route>
 
             <Route exact path="/meetups">
               <MeetupList setAuthUser={setAuthUser}/>
             </Route>
 
-            <Route exact path="/lists/:listId(\d+)">
+            <Route path="/lists/:listId(\d+)">
                 {/* <ListDetail /> */}
             </Route>
 
@@ -61,7 +63,7 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             </Route>
 
             <Route path="/lists/:listId(\d+)/edit">
-                {/* <ListEditForm /> */}
+                <ListEditForm />
             </Route>
 
             <Route exact path="/lists">

@@ -20,9 +20,8 @@ export const ListList = () => {
   return (
     <>
     <section className="button">
-    <Link to="/lists/create"><button className="button-close">Add List</button></Link> 
       <div className="container-cards">
-        {/* <ProfileCard /> */}
+        <Link className="container-cards" to="/lists/create"><button className="button-add">Add List</button></Link>
         {lists.map(list => 
           <ListCard
             key={list.id} list={list}/>)}
