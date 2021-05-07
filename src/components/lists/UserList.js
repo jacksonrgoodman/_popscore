@@ -34,7 +34,7 @@ export const UserList = () => {
             <div className="mylists-cards">
             <div>
                 <div className="corner-button-bin">
-                    <Link to="/meetups/create"><button className="corner-button">Add List</button></Link>
+                    <Link to="/lists/create"><button className="corner-button">Add List</button></Link>
                 </div>
                 <div className="user-meetup-head">
                 <h3 className="my-meetups-title">My Lists:</h3>
