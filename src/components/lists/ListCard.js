@@ -26,7 +26,7 @@ export const ListCard = ({ list }) => {
       <div className="card-content">
       <div>
         {currentUser === list.user.id ?
-        <Link className="container-cards" to={`/lists/${list.id}/edit`}><button className="corner-button-yellow">Edit List Details</button></Link>
+        <Link className="container-cards" to={`/lists/${list.id}/edit`}><button className="corner-button-purple">Edit List Details</button></Link>
         :""
       }</div>
         <picture>

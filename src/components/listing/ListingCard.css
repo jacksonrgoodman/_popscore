@@ -1,0 +1,24 @@
+.movie-bin {
+    display: flex;
+    flex-direction: column;
+}
+.movie-bin-search {
+    justify-content: center;
+}
+
+.movie-content {
+    display: flex;
+
+}
+.moviePoster {
+    align-items: center;
+    border: .25rem solid plum;
+    border-radius: 1rem;
+}
+
+.form-control-search {
+    width: 90%;
+    background: white;
+    display: flex;
+    align-self: center;
+}

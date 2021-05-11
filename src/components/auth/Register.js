@@ -62,7 +62,7 @@ export const Register = ({setAuthUser}) => {
             </dialog>
 
             <form className="form-register" onSubmit={handleRegister}>
-            <img className="logo-login" src={require('./logo_popscore_login.png').default} />
+            <img className="logo-login" src={require('./logo_popscore_login.png').default} alt="logo"/>
                 <h1 className="h3 mb-3 font-weight-normal">Sign Up Here!</h1>
                 <fieldset>
                     <label htmlFor="userName"> User Name: </label>
