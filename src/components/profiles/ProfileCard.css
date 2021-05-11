@@ -10,6 +10,12 @@ h3,h5 {
     border-right: 2px solid plum;
 }
 
+.all-my-meetup-cards, .all-my-list-cards {
+    margin: 1rem;
+    background: plum;
+    border-radius: 1rem;   
+}
+
 .welcome{
     display: flex;
     align-items: center;

@@ -46,7 +46,7 @@ export const Register = ({setAuthUser}) => {
                         })
                 }
                 else {
-                    console.log(conflictDialog.current)
+                    //console.log(conflictDialog.current)
                     conflictDialog.current.showModal()
                 }
             })

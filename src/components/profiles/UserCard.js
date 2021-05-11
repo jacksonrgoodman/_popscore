@@ -6,8 +6,8 @@ import userEvent from '@testing-library/user-event';
 
 
 export const UserCard = ({ user }) => {
-    // console.log("Object Passed Into Profile Card:",user)
-    // console.log("Picture",user.pic)
+    //console.log("Object Passed Into Profile Card:",user)
+    //console.log("Picture",user.pic)
 
   return (
     <div className="card">

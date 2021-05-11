@@ -7,3 +7,5 @@ export function firstLetterCase(str) {
 export function splitTypeArray(arr){
     return arr.join(" and ");
 }
+
+export const tmdbAPIAddress = "https://api.themoviedb.org/3/search/movie"

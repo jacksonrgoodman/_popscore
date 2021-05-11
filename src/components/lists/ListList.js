@@ -21,7 +21,8 @@ export const ListList = () => {
     <>
     <section className="button">
       <div className="container-cards">
-        <Link className="container-cards" to="/lists/create"><button className="button-add">Add List</button></Link>
+      <h1 className="my-lists-title">All Lists:</h1>  
+        <Link className="container-cards" to="/lists/create"><button className="button-add-green">Add List</button></Link>
         {lists.map(list => 
           <ListCard
             key={list.id} list={list}/>)}

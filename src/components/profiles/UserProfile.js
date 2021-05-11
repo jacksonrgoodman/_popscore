@@ -11,16 +11,16 @@ export const UserProfile = () => {
     const [user, setUsers] = useState([]);
     const history = useHistory();
 
-    // console.log("User Stored In SetState:", user)
+    //console.log("User Stored In SetState:", user)
 
     const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
 
-    // console.log("Currently Logged In User From Session Storage:", currentUser)
+    //console.log("Currently Logged In User From Session Storage:", currentUser)
 
     const getUser = () => {
-        // console.log("CURRENT USER INSIDE getUSER",currentUser)
+        //console.log("CURRENT USER INSIDE getUSER",currentUser)
         return getUserById(parseInt(currentUser)).then(userFromAPI => {
-            // console.log("API RETURNS:",userFromAPI)
+            //console.log("API RETURNS:",userFromAPI)
             setUsers(userFromAPI)
         });
     };
@@ -28,7 +28,7 @@ export const UserProfile = () => {
     useEffect(() => {
         getUser();
     }, []);
-    // console.log(user)
+    //console.log(user)
   return (
     <>
     <section className="user-profile"> 

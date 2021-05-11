@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { UserListCard } from './UserListCard';
+import { MyListCard } from './MyListCard';
 import { getAllLists, remove, getMovieListsByUserId } from '../../modules/ListManager.js';
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
 
 
-export const UserList = () => {
+export const MyLists = () => {
     const [lists, setLists] = useState([]);
     const history = useHistory();
 
@@ -28,22 +28,17 @@ export const UserList = () => {
         getUserLists();
     }, []);
 
-  return (
-    <>
-        <section className="lists"> 
-            <div className="mylists-cards">
-            <div>
-                <div className="corner-button-bin">
-                <Link to="/lists/create"><button className="corner-button">Add List</button></Link>
-                </div>
-                <div className="user-meetup-head">
-                <Link className="my-meetups-title" to="/mylists"><h3 className="my-meetups-title">My Lists:</h3></Link>
-                </div>
-            </div>  
-                {lists.map(lists => 
-                    <UserListCard key={lists.id} list={lists}/>)}
+    return (
+        <>
+        <section className="button">
+          <div className="container-cards">
+            <h1 className="my-lists-title">My Lists:</h1>  
+            <Link className="container-cards" to="/lists/create"><button className="button-add-green">Add List</button></Link>
+            {lists.map(lists => 
+              <MyListCard
+                key={lists.id} list={lists}/>)}
             </div>
-        </section>
-    </>
-    );
-};
+            </section>
+        </>
+        );
+    };

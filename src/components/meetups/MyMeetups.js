@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { UserMeetupCard } from './UserMeetupCard';
+import { MyMeetupCard } from './MyMeetupCard';
 import { getAllMeetups, remove, getMeetupsByUserId } from '../../modules/MeetupManager.js';
 import { useHistory } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import "./MeetupCard.css"
 
 
-export const UserMeetup = () => {
+export const MyMeetups = () => {
     const [meetups, setMeetups] = useState([]);
     const history = useHistory();
 
@@ -30,23 +30,19 @@ export const UserMeetup = () => {
         getUserMeetups();
     }, []);
 
-  return (
-    <>
-    <section className="meetups"> 
-        <div className="mymeetups-cards">
-            <div>
-                <div className="corner-button-bin">
-                    <Link to="/meetups/create"><button className="corner-button">Add Meetup</button></Link>
-                </div>
-                <div className="user-meetup-head">
-                    <Link className="my-meetups-title" to="/mymeetups"><h3 className="my-meetups-title">My Meetups:</h3></Link>
-                </div>
+    return (
+        <>
+          <section className="button"> 
+            <div className="container-cards">
+            <h1 className="my-lists-title">My Meetups:</h1>  
+              <Link className="container-cards" to="/meetups/create"><button className="button-add-green">Add Meetup</button></Link>
+              {meetups.map(meetup => 
+                <MyMeetupCard
+                  key={meetup.id} meetup={meetup}
+                />)
+              }
             </div>
-            {meetups.map(meetup => 
-                <UserMeetupCard key={meetup.id} meetup={meetup}/>)
-            }
-        </div>
-    </section>
-    </>
-    );
-};
+          </section>
+        </>
+        );
+    };

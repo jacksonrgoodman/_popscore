@@ -11,12 +11,12 @@ export const getList = (id) => {
 }
 
 export const getMovieListsByUserId = (id) => {
-    // console.log("ID PASSED INTO MOVIELIST BY ID FETCH",id)
-    return fetch(`${remoteURL}/movieLists/?userId=${id}`)
+    //console.log("ID PASSED INTO MOVIELIST BY ID FETCH",id)
+    return fetch(`${remoteURL}/movieLists/?userId=${id}&_expand=user`)
     .then(res => res.json())
 }
 export const getListingByMovieListId = (id) => {
-    // console.log("ID PASSED INTO MOVIELIST BY ID FETCH",id)
+    //console.log("ID PASSED INTO MOVIELIST BY ID FETCH",id)
     return fetch(`${remoteURL}/listings/?movieListId=${id}&_expand=movie`)
     .then(res => res.json())
 }

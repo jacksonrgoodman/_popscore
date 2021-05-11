@@ -40,14 +40,14 @@ const [lists, setLists] = useState([]);
     };
 
   updateMeetup(editedMeetup)
-    .then(() => history.push("/meetups")
+    .then(() => history.push("/mymeetups")
     )
   }
   const handleDelete = () => {
     //invoke the delete function in AnimalManger and re-direct to the animal list.
     setIsLoading(true);
     deleteMeetup(meetupId).then(() =>
-    history.push("/meetups")
+    history.push("/mymeetups")
     )
   };
 

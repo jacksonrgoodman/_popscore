@@ -1,0 +1,1 @@
+export const tmdbAPIKey = "5d5af5582c967a13cb2e58faf48fa8be"

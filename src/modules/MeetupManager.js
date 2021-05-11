@@ -11,7 +11,7 @@ export const getMeetup = (id) => {
 }
 
 export const getMeetupsByUserId = (id) => {
-    return fetch(`${remoteURL}/meetups/?userId=${id}`)
+    return fetch(`${remoteURL}/meetups/?userId=${id}&_expand=user&_expand=movieList`)
     .then(res => res.json())
 }
 

@@ -7,11 +7,13 @@ import { UserProfile } from "./components/profiles/UserProfile"
 import { ProfileList } from "./components/profiles/ProfileList"
 
 import { UserList } from "./components/lists/UserList"
+import { MyLists } from "./components/lists/MyLists"
 import { ListList } from "./components/lists/ListList"
 import { ListForm } from "./components/lists/AddList"
 import { ListEditForm } from "./components/lists/EditList"
 
 import { UserMeetup } from "./components/meetups/UserMeetup"
+import { MyMeetups } from "./components/meetups/MyMeetups"
 import { MeetupList } from "./components/meetups/MeetupList"
 import { MeetupForm } from "./components/meetups/AddMeetup"
 import { MeetupEditForm } from "./components/meetups/EditMeetup"
@@ -53,6 +55,9 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             <Route exact path="/meetups">
               <MeetupList setAuthUser={setAuthUser}/>
             </Route>
+            <Route exact path="/mymeetups">
+              <MyMeetups setAuthUser={setAuthUser}/>
+            </Route>
 
             <Route path="/lists/:listId(\d+)">
                 {/* <ListDetail /> */}
@@ -68,6 +73,9 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
             <Route exact path="/lists">
               <ListList setAuthUser={setAuthUser}/>
+            </Route>
+            <Route exact path="/mylists">
+              <MyLists setAuthUser={setAuthUser}/>
             </Route>
             <Route exact path="/profiles">
               <ProfileList setAuthUser={setAuthUser}/> 
