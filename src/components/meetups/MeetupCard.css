@@ -9,6 +9,12 @@ h3,h5 {
     border-bottom: 2px solid plum;
     border-right: 2px solid plum;
 }
+.all-my-meetups-cards, .all-my-lists-cards {
+    margin: 1rem;
+    background: lightsteelblue;
+    border-radius: 1rem;
+}
+
 .meetup-card-content {
     display: flex;
     flex-direction: column;
@@ -44,6 +50,13 @@ h3,h5 {
 .my-meetups-title {
     flex-grow: 2;
 }
+.my-lists-title {
+    color: white;
+}
+.all-my-meetups-title, .all-my-lists-title {
+    flex-grow: 2;
+    color: midnightblue
+}
 .corner-button {
     background: lightsteelblue;
     font-family: 'Lato', sans-serif;
@@ -51,6 +64,21 @@ h3,h5 {
     height: 2rem;
     justify-content: center;
 }
+.corner-button-green {
+    background: lightgreen;
+    font-family: 'Lato', sans-serif;
+    border-radius: 1rem;
+    height: 2rem;
+    justify-content: center;
+}
+.corner-button-yellow {
+    background: plum;
+    font-family: 'Lato', sans-serif;
+    border-radius: 1rem;
+    height: 2rem;
+    justify-content: center;
+}
+
 .corner-button-delete {
     background: salmon;
     font-family: 'Lato', sans-serif;

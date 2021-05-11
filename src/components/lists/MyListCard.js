@@ -6,11 +6,11 @@ import userEvent from '@testing-library/user-event';
 
 
 
-export const ListCard = ({ list }) => {
-  ////console.log("Object Passed Into List Card:",list)
+export const MyListCard = ({ list }) => {
+  //console.log("Object Passed Into List Card:",list)
   const [listings, setListings] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  
+
   useEffect(() => {
     getListingByMovieListId(
         list.id
@@ -25,10 +25,11 @@ export const ListCard = ({ list }) => {
     <div className="all-meetup-cards">
       <div className="card-content">
       <div>
-        {currentUser === list.user.id ?
+        {currentUser === list.userId ?
         <Link className="container-cards" to={`/lists/${list.id}/edit`}><button className="corner-button-yellow">Edit List Details</button></Link>
         :""
-      }</div>
+      }
+      </div>
         <picture>
           {/* <img src={require('./dog.svg').default} alt="My Dog" /> */}
         </picture>
@@ -48,12 +49,12 @@ export const ListCard = ({ list }) => {
         
           <h3>Featuring:</h3>
         {/* {listings.map(l =>(
-        <h3>{l.movie.name}
+          <h3>{l.movie.name}
           </h3>
-          ))} */}
-        
+        ))} */}
+         
       </div>
-      <div>
+        <div>
           {currentUser === list.userId ?
           <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="corner-button">Edit Movies</button></Link>
           :""

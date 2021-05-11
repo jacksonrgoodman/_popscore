@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./ListCard.css";
+import { getListingByMovieListId } from "../../modules/ListManager"
 import { Link } from "react-router-dom";
 import userEvent from '@testing-library/user-event';
 
 
 
 export const UserListCard = ({ list }) => {
-    // console.log("Object Passed Into List Card:",list)
+    //console.log("Object Passed Into List Card:",list)
+    const [listings, setListings] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+
+  useEffect(() => {
+    getListingByMovieListId(
+        list.id
+        )
+        .then(listings => {
+            setListings(listings);
+            setIsLoading(false);
+    });
+}, []);
 
   return (
     <div className="my-list-cards">
@@ -21,7 +35,10 @@ export const UserListCard = ({ list }) => {
         </h3>
         <h5>  
             <span className="list-card-detail">
-                {/* {movieList.creatorId.userName} */}
+            {/* {listings.map(l =>(
+        <h3>{l.movie.name}
+          </h3>
+          ))} */}
             </span>
         </h5>
         {/* <h5>{user.name}</h5> */}

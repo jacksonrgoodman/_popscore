@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event';
 
 
 export const UserMeetupCard = ({ meetup }) => {
-    // console.log("Object Passed Into USER Meetup Card:", meetup)
+    //console.log("Object Passed Into USER Meetup Card:", meetup)
 
   return (
     <div className="my-meetup-card">

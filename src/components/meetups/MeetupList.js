@@ -21,7 +21,8 @@ export const MeetupList = () => {
     <>
       <section className="button"> 
         <div className="container-cards">
-          <Link className="container-cards" to="/meetups/create"><button className="button-add">Add Meetup</button></Link>
+        <h1 className="my-lists-title">All Meetups:</h1>  
+          <Link className="container-cards" to="/meetups/create"><button className="button-add-green">Add Meetup</button></Link>
           {meetups.map(meetup => 
             <MeetupCard
               key={meetup.id} meetup={meetup}

@@ -41,36 +41,19 @@
       "id": 5
     }
   ],
-  "movies": [
-    {
-      "id": 1,
-      "name": "JAWS",
-      "year": "1975"
-    },
-    {
-      "id": 2,
-      "name": "Gone Girl",
-      "year": "2013"
-    },
-    {
-      "id": 3,
-      "name": "Zodiac",
-      "year": "2006"
-    }
-  ],
   "listings": [
     {
-      "id":1,
-      "movieId": 1,
+      "id": 1,
+      "movieId": 578,
       "movieListId": 1
     },
     {
-      "id":2,
+      "id": 2,
       "movieId": 2,
       "movieListId": 2
     },
     {
-      "id":3,
+      "id": 3,
       "movieId": 3,
       "movieListId": 2
     }
@@ -81,7 +64,7 @@
       "userId": 1,
       "name": "Spielberg's Water-Based Filmography",
       "listTheme": "Violet",
-      "desc": "didactic"
+      "desc": "Water Movies"
     },
     {
       "id": 2,
@@ -109,14 +92,14 @@
       "userId": 5,
       "name": "Action Films",
       "listTheme": "Purple",
-      "desc": "Monitored"
+      "desc": "Jean Claud Van DAMN"
     },
     {
       "id": 6,
       "userId": 5,
       "name": "Westerns",
       "listTheme": "Red",
-      "desc": "Cowboy"
+      "desc": "West of Eastwood!"
     }
   ],
   "meetups": [
