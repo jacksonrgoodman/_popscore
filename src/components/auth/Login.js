@@ -39,9 +39,9 @@ export const Login = ({setAuthUser}) => {
 
             <section className="login-bubble">
                 <form className="form-login" onSubmit={handleLogin}>
-                    <img className="peep-login" src={require('../../images/peep-sitting-5.svg').default} />
+                    <img className="peep-login" src={require('../../images/peep-sitting-5.svg').default} alt="peep" />
                     <div className="user-interface">
-                        <img className="logo-login" src={require('./logo_popscore_login.png').default} />
+                        <img className="logo-login" src={require('./logo_popscore_login.png').default} alt="logo"/>
                         <h2 className="sign-in">Sign In Here!</h2>
                         <fieldset className="input-email">
                             <label htmlFor="inputEmail"> Email: </label>

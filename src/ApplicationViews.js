@@ -1,5 +1,5 @@
 import React from "react" 
-import { Route,Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { Login } from "./components/auth/Login";
 import { Register } from "./components/auth/Register";
 
@@ -9,7 +9,7 @@ import { ProfileList } from "./components/profiles/ProfileList"
 import { UserList } from "./components/lists/UserList"
 import { MyLists } from "./components/lists/MyLists"
 import { ListList } from "./components/lists/ListList"
-import { ListForm } from "./components/lists/AddList"
+import { AddList } from "./components/lists/AddList"
 import { ListEditForm } from "./components/lists/EditList"
 
 import { UserMeetup } from "./components/meetups/UserMeetup"
@@ -17,6 +17,9 @@ import { MyMeetups } from "./components/meetups/MyMeetups"
 import { MeetupList } from "./components/meetups/MeetupList"
 import { MeetupForm } from "./components/meetups/AddMeetup"
 import { MeetupEditForm } from "./components/meetups/EditMeetup"
+
+import { ListingEditForm } from "./components/listing/ListingEditForm"
+
 
 export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
 
@@ -64,11 +67,14 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             </Route>
 
             <Route path="/lists/create">
-                <ListForm />
+                <AddList />
             </Route>
 
             <Route path="/lists/:listId(\d+)/edit">
                 <ListEditForm />
+            </Route>
+            <Route path="/listings/:listingId(\d+)/edit">
+                <ListingEditForm />
             </Route>
 
             <Route exact path="/lists">

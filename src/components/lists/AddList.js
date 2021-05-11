@@ -4,7 +4,7 @@ import { addList } from '../../modules/ListManager';
 
 import './ListForm.css'
 
-export const ListForm = () => {
+export const AddList = () => {
 	// State will contain both list data as well as an isLoading flag.
 	// Define the initial state of the form inputs with useState()
 
@@ -16,7 +16,7 @@ export const ListForm = () => {
         listTheme:"XXX"
 	});
 
-	const [isLoading, setIsLoading] = useState(false);
+	//const [isLoading, setIsLoading] = useState(false);
 
 	// you will need the the `getAll` in the LocationsManager and CustomersManager to complete this section
 
@@ -76,7 +76,7 @@ export const ListForm = () => {
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="description">Description:</label>
-					<input type="text" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="List description" value={list.desc} />
+					<input type="text" id="desc" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="List description" value={list.desc} />
 				</div>
 			</fieldset>
 			

@@ -102,7 +102,7 @@ export const ListEditForm = () => {
               </h3>
             ))} */}
           </div>
-          {/* <fieldset>
+          <fieldset>
             <div className="form-group">
               <label htmlFor="searchMovie">Add Movie To List: </label>
               <input  type="text" id="searchMovie" onChange={printAPICall} required autoFocus className="form-control" placeholder="Movie Title" />
@@ -113,7 +113,7 @@ export const ListEditForm = () => {
           <h3>{s.movie.name}
           </h3>
         ))}
-          </fieldset> */}
+          </fieldset>
 
           <div className="buttons">
             <div className="alignRight">
