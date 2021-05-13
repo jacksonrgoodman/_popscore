@@ -30,6 +30,15 @@ export const addList = (newList) => {
         body: JSON.stringify(newList)
     }).then(response => response.json())
 }
+export const addListing = (newListing) => {
+    return fetch(`${remoteURL}/listings`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newListing)
+    }).then(response => response.json())
+}
   
 export const updateList = (editedList) =>{
     return fetch(`${remoteURL}/movieLists/${editedList.id}`, {

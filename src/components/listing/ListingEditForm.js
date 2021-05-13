@@ -41,7 +41,7 @@ export const ListingEditForm = () => {
                 </div>
                 <div>
                     {movies.map(m => (
-                        <ListingCard key={m.id} movie={m}/>
+                        <ListingCard key={m.id} movie={m} list ={listingId}/>
                     ))}
                 </div>
             </div>

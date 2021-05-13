@@ -48,15 +48,15 @@ export const MyListCard = ({ list }) => {
         </h5>
         
           <h3>Featuring:</h3>
-        {/* {listings.map(l =>(
-          <h3>{l.movie.name}
+        {listings.map(l =>(
+          <h3>{l.title}({l.release_date})
           </h3>
-        ))} */}
+        ))}
          
       </div>
         <div>
           {currentUser === list.userId ?
-          <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="corner-button">Edit Movies</button></Link>
+          <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="corner-button">Add Movies</button></Link>
           :""
         }
         </div>

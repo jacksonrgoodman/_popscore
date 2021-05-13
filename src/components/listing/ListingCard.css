@@ -16,6 +16,23 @@
     border-radius: 1rem;
 }
 
+.titleBin {
+    display: flex;
+}
+
+.miniMoviePoster {
+    width: 75%;
+    align-items: center;
+    border: .25rem solid plum;
+    border-radius: 1rem;
+}
+.miniMovieTitle {
+    color: white;
+    width: 75%;
+    align-self: center;
+    
+}
+
 .form-control-search {
     width: 90%;
     background: white;

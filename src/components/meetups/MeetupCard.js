@@ -7,8 +7,14 @@ import userEvent from '@testing-library/user-event';
 
 export const MeetupCard = ({ meetup }) => {
   //console.log("Object Passed Into Meetup Card:", meetup)
+  
+  
   const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
-
+  const hour = (parseInt(meetup.time.split(":",1)))
+  const minute = (meetup.time.split(":"))
+  const updateMinute = (minute.shift())
+  const updatetime = ( hour > 12 ? (hour - 12) : hour )
+  const nightNoon = ( hour > 12 ? " PM" : " AM")
   return (
     <div className="all-meetup-cards">
       <div className="card-content">
@@ -20,7 +26,8 @@ export const MeetupCard = ({ meetup }) => {
         <span className="card-name">
           <h3>
             {meetup.name}
-            <p>{meetup.time}</p>
+            <p>{updatetime}:{updateMinute}{nightNoon}</p>
+            
           <p>{meetup.description}</p>
           </h3>
         </span>

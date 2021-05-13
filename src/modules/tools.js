@@ -9,3 +9,4 @@ export function splitTypeArray(arr){
 }
 
 export const tmdbAPIAddress = "https://api.themoviedb.org/3/search/movie"
+export const tmdbAPIAddress2 = "https://api.themoviedb.org/3/search/movie"

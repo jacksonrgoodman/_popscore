@@ -70,6 +70,16 @@ const [lists, setLists] = useState([]);
           {currentUser === meetup.userId 
             ?   
                 <form className="meetupForm">
+                    <div className="button-top">
+                        <div className="alignLeft">
+                            <button
+                                type="button" disabled={isLoading}
+                                onClick={handleDelete}
+                                className="corner-button-delete"
+                            >Delete</button>
+                        </div>
+
+                    </div>
                 <h2 className="meetupForm__title">Edit Meetup</h2>
                     <fieldset>
                         <div className="form-group">
@@ -113,7 +123,7 @@ const [lists, setLists] = useState([]);
                                 ))}
                             </select>
                         </div>
-                    </fieldset>``
+                    </fieldset>
                     <div className="buttons">  
                         <div className="alignRight">
                             <button
@@ -121,13 +131,6 @@ const [lists, setLists] = useState([]);
                             onClick={updateExistingMeetup}
                             className="corner-button"
                             >Submit</button>
-                        </div>
-                        <div className="alignLeft">
-                            <button
-                                type="button" disabled={isLoading}
-                                onClick={handleDelete}
-                                className="corner-button-delete"
-                            >Delete</button>
                         </div>
                     </div>
                 </form>
