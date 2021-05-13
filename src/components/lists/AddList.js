@@ -55,7 +55,7 @@ export const AddList = () => {
 		
 
 		if (name === " ") {
-			window.alert("Please select a date and a time")
+			window.alert("Please Name Your List")
 		} else {
 			//invoke addList passing list as an argument.
 			//once complete, change the url and display the list list

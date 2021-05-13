@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { updateList, getListingByMovieListId, getList, deleteList } from "../../modules/ListManager"
 import { searchMovie } from "../../modules/APIManager"
-import { useHistory, useParams } from "react-router-dom"
+import { Link, useHistory, useParams } from "react-router-dom"
 import "./ListForm.css"
 
 
@@ -43,15 +43,7 @@ export const ListEditForm = () => {
     )
   };
   
-  const printAPICall = (event) => {
-    let searchMovieName = event.target.value
-    console.log(searchMovieName)
-    searchMovie(searchMovieName)
-      .then(searchedmovies => {
-        setSearchMovies(searchedmovies);
-        setIsLoading(false);
-      });
-  };
+  
 
   const handleFieldChange = evt => {
     const stateToChange = { ...list };
@@ -83,6 +75,15 @@ export const ListEditForm = () => {
       {currentUser === list.userId
         ?
         <form className="listForm">
+          <div className="button-top">
+            <div className="alignLeft">
+              <button
+                type="button" disabled={isLoading}
+                onClick={handleDelete}
+                className="corner-button-delete"
+              >Delete</button>
+            </div>
+            </div>
           <h2 className="listForm__title">Edit List Details</h2>
           <fieldset>
             <div className="form-group">
@@ -97,23 +98,26 @@ export const ListEditForm = () => {
             </div>
           </fieldset>
           <div>
-            {/* {listings.map(l => (
-              <h3>{l.movie.name}
+            {listings.map(l => (
+              <h3>{l.title}
               </h3>
-            ))} */}
+            ))}
           </div>
           <fieldset>
             <div className="form-group">
-              <label htmlFor="searchMovie">Add Movie To List: </label>
-              <input  type="text" id="searchMovie" onChange={printAPICall} required autoFocus className="form-control" placeholder="Movie Title" />
+              {/* <label htmlFor="searchMovie">Add Movie To List: </label> */}
+              {/* <input  type="text" id="searchMovie" onChange={printAPICall} required autoFocus className="form-control" placeholder="Movie Title" /> */}
             </div>
-            <button className="corner-button-green" type="button" disabled={isLoading}
-              onClick={printAPICall}>PRINT</button>
-            {searchMovies.map(s =>(
-          <h3>{s.movie.name}
-          </h3>
-        ))}
+            {/* <button className="corner-button-green" type="button" disabled={isLoading}
+              onClick={printAPICall}>PRINT</button> */}
+            {/* {searchMovies.map(s =>(
+              <h3>{s.movie.name}
+              </h3>
+            ))} */}
           </fieldset>
+          <div className="container-cards">
+          <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="button-add-green">Change Movies</button></Link>
+          </div>
 
           <div className="buttons">
             <div className="alignRight">
@@ -122,13 +126,6 @@ export const ListEditForm = () => {
                 onClick={updateExistingList}
                 className="corner-button"
               >Submit</button>
-            </div>
-            <div className="alignLeft">
-              <button
-                type="button" disabled={isLoading}
-                onClick={handleDelete}
-                className="corner-button-delete"
-              >Delete</button>
             </div>
           </div>
         </form>

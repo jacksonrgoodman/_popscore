@@ -39,23 +39,48 @@
       "bio": "I am a gamer",
       "isAdmin": false,
       "id": 5
+    },
+    {
+      "name": "Jacksons Younger Brother",
+      "userName": "gr1f",
+      "email": "flatearthsociety@gmail.com",
+      "bio": "Hello I am Jackson's younger brother",
+      "isAdmin": false,
+      "id": 6
     }
   ],
   "listings": [
     {
-      "id": 1,
-      "movieId": 578,
-      "movieListId": 1
+      "movieId": 23483,
+      "movieListId": 5,
+      "title": "Kick-Ass",
+      "poster_path": "/GPiMXaDC2NdDIldLgtijHFTeKH.jpg",
+      "release_date": "2010-03-22",
+      "id": 1
     },
     {
-      "id": 2,
-      "movieId": 2,
-      "movieListId": 2
+      "movieId": 117711,
+      "movieListId": 5,
+      "title": "Kung Fu Killer 2",
+      "poster_path": "/hSGcClAf6CVADZtcgrudQwFt3OR.jpg",
+      "release_date": "2008-08-17",
+      "id": 2
     },
     {
-      "id": 3,
-      "movieId": 3,
-      "movieListId": 2
+      "movieId": 223485,
+      "movieListId": 6,
+      "title": "Slow West",
+      "poster_path": "/j3PmbRZvf5KpNbapSjn8b0CpD6a.jpg",
+      "release_date": "2015-04-16",
+      "id": 3
+    },
+    {
+      "movieId": 121681,
+      "movieListId": 6,
+      "title": "Cowboy Junction",
+      "poster_path": "/87Sq75BOjLyYR5R6KxjkdkXpdFM.jpg",
+      "release_date": "2006-05-18",
+      "id": 4
     }
   ],
   "movieLists": [
@@ -100,6 +125,20 @@
       "name": "Westerns",
       "listTheme": "Red",
       "desc": "West of Eastwood!"
+    },
+    {
+      "name": "Animation",
+      "desc": "Literally anything else",
+      "userId": 6,
+      "listTheme": "XXX",
+      "id": 7
+    },
+    {
+      "name": "Anime",
+      "desc": "what do you think",
+      "userId": 6,
+      "listTheme": "XXX",
+      "id": 8
     }
   ],
   "meetups": [
@@ -152,11 +191,22 @@
       "name": "Dad's Picks Cinema Club",
       "description": "Movies To Like",
       "address": "6962 Logan Circle",
-      "date": "2021-05-06",
-      "time": "13:21",
+      "date": "2021-05-11",
+      "time": "20:00",
       "userId": 5,
       "movieListId": 6,
       "isFull": false
+    },
+    {
+      "name": "Animation Club ",
+      "address": "pm for discord link",
+      "date": "2069-04-20",
+      "time": "04:20",
+      "userId": 6,
+      "movieListId": 7,
+      "isFull": false,
+      "description": "cool peeps only in my discord",
+      "id": 7
     }
   ]
 }

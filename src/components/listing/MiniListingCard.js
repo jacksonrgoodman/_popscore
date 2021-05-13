@@ -7,14 +7,10 @@ import userEvent from '@testing-library/user-event';
 
 
 
-export const ListingCard = ({ movie, list }) => {
+export const MiniListingCard = ({ movie }) => {
   ////console.log("Object Passed Into List Card:",list)
   const [listings, setListings] = useState({
-    movieId: movie.id,
-    movieListId: parseInt(list),
-    title: movie.title,
-    poster_path: movie.poster_path,
-    release_date: movie.release_date
+    
 		
     
     
@@ -33,40 +29,32 @@ export const ListingCard = ({ movie, list }) => {
 const printAPICallById = () => {
   const searchedId = movie.id
   addListing(listings)
-  .then(() => history.push(`/lists/${list}/edit`))
+  .then(() => history.push(`/`))
 }
-const movieDesc = movie.overview.split(". ",1)
+//const movieDesc = movie.overview.split(". ",1)
 const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
     const imageURL = `https://image.tmdb.org/t/p/w200/${movie.poster_path}`
   return (
     <>
-      {
+      {/* {
         movie.poster_path === null 
         ? "" 
-        : 
-    <div className="all-meetup-cards">
+        :  */}
+    <div>
       <div className="movie-content">
       <div>
         </div>
         <picture>
-          <img className="moviePoster" src={imageURL} alt={movie.title} />
+          <img className="miniMoviePoster" src={imageURL} alt={movie.title} />
         </picture>
-        <span className="card-name">
-          <h3>
+        <span className="titleBin">
+          <h3 className="miniMovieTitle">
             {movie.title}
           </h3>
-          <p>
-            {movieDesc}
-          </p>
         </span>
       </div>
-        <span className="">
-          <button className="corner-button-delete" onClick={printAPICallById}>
-            Add Movie!
-          </button>
-        </span>
     </div>
-     }
+     {/* } */}
     </>
   );
 }
