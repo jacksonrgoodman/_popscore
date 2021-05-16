@@ -21,7 +21,6 @@ export const MeetupForm = () => {
         isFull: false
 	});
 
-	const [isLoading, setIsLoading] = useState(false);
 
 	// you will need the the `getAll` in the LocationsManager and CustomersManager to complete this section
 

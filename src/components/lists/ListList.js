@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ListCard } from './ListCard';
-import { getAllLists, remove, getUserById } from '../../modules/ListManager.js';
-import { useHistory } from "react-router-dom";
+import { getAllLists } from '../../modules/ListManager.js';
+
 import { Link } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
+
 
 
 export const ListList = () => {
@@ -16,10 +16,10 @@ export const ListList = () => {
   useEffect(() => {
     getLists();
   }, []);
-  const history = useHistory();
+  
   return (
     <>
-    <section className="button">
+    
       <div className="container-cards">
       <h1 className="my-lists-title">All Lists:</h1>  
         <Link className="container-cards" to="/lists/create"><button className="button-add-green">Add List</button></Link>
@@ -27,7 +27,7 @@ export const ListList = () => {
           <ListCard
             key={list.id} list={list}/>)}
         </div>
-        </section>
+        
     </>
     );
 };

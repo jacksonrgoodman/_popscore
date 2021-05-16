@@ -55,3 +55,8 @@ export const deleteList = (id) => {
       method: "DELETE"
     }).then(result => result.json())
 }
+export const deleteListing = (id) => {
+    return fetch(`${remoteURL}/listings/${id}`, {
+      method: "DELETE"
+    }).then(result => result.json())
+}

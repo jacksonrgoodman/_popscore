@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MyMeetupCard } from './MyMeetupCard';
-import { getAllMeetups, remove, getMeetupsByUserId } from '../../modules/MeetupManager.js';
-import { useHistory } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
+import { getMeetupsByUserId } from '../../modules/MeetupManager.js';
+
 import { Link } from "react-router-dom";
 
 import "./MeetupCard.css"
@@ -10,7 +9,7 @@ import "./MeetupCard.css"
 
 export const MyMeetups = () => {
     const [meetups, setMeetups] = useState([]);
-    const history = useHistory();
+    
 
     //console.log("List Stored In SetState:", meetups)
 

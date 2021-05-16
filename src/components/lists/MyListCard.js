@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import "./ListCard.css";
 import { getListingByMovieListId } from "../../modules/ListManager"
-import { Link, useParams } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
-
+import { Link } from "react-router-dom"; 
+import { MiniListingCard } from "../listing/MiniListingCard";
 
 
 export const MyListCard = ({ list }) => {
   //console.log("Object Passed Into List Card:",list)
   const [listings, setListings] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+
 
   useEffect(() => {
     getListingByMovieListId(
@@ -17,7 +16,6 @@ export const MyListCard = ({ list }) => {
         )
         .then(listings => {
             setListings(listings);
-            setIsLoading(false);
     });
 }, []);
   const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
@@ -48,10 +46,8 @@ export const MyListCard = ({ list }) => {
         </h5>
         
           <h3>Featuring:</h3>
-        {listings.map(l =>(
-          <h3>{l.title}({l.release_date})
-          </h3>
-        ))}
+          {listings.map(l =>(
+          <MiniListingCard key={l.id} movie={l}/>))}
          
       </div>
         <div>

@@ -6,6 +6,7 @@
       "userName": "nbithany0",
       "email": "nbithany0@uiuc.edu",
       "bio": "encompassing",
+      "pic": "Head2.png",
       "isAdmin": false
     },
     {
@@ -13,11 +14,13 @@
       "name": "Mario Iacovo",
       "userName": "miacovo1",
       "email": "miacovo1@slate.com",
+      "pic": "Head3.png",
       "bio": "Phased",
       "isAdmin": false
     },
     {
       "id": 3,
+      "pic": "Head1.png",
       "name": "Jo ann Skitteral",
       "userName": "jann2",
       "email": "jann2@geocities.jp",
@@ -27,6 +30,7 @@
     {
       "id": 4,
       "name": "Alla Quaife",
+      "pic": "Head3.png",
       "userName": "aquaife3",
       "email": "aquaife3@dot.gov",
       "bio": "heuristic",
@@ -37,6 +41,7 @@
       "userName": "hoverspool",
       "email": "jacksonrgoodman@gmail.com",
       "bio": "I am a gamer",
+      "pic": "Head4.png",
       "isAdmin": false,
       "id": 5
     },
@@ -44,7 +49,8 @@
       "name": "Jacksons Younger Brother",
       "userName": "gr1f",
       "email": "flatearthsociety@gmail.com",
-      "bio": "Hello I am Jackson's younger brother",
+      "pic": "Head1.png",
+      "bio": "Jackson's younger brother",
       "isAdmin": false,
       "id": 6
     }
@@ -59,14 +65,6 @@
       "id": 1
     },
     {
-      "movieId": 117711,
-      "movieListId": 5,
-      "title": "Kung Fu Killer 2",
-      "poster_path": "/hSGcClAf6CVADZtcgrudQwFt3OR.jpg",
-      "release_date": "2008-08-17",
-      "id": 2
-    },
-    {
       "movieId": 223485,
       "movieListId": 6,
       "title": "Slow West",
@@ -75,12 +73,20 @@
       "id": 3
     },
     {
-      "movieId": 121681,
+      "movieId": 9470,
+      "movieListId": 5,
+      "title": "Kung Fu Hustle",
+      "poster_path": "/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg",
+      "release_date": "2004-02-10",
+      "id": 5
+    },
+    {
+      "movieId": 5176,
       "movieListId": 6,
-      "title": "Cowboy Junction",
-      "poster_path": "/87Sq75BOjLyYR5R6KxjkdkXpdFM.jpg",
-      "release_date": "2006-05-18",
-      "id": 4
+      "title": "3:10 to Yuma",
+      "poster_path": "/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg",
+      "release_date": "2007-09-06",
+      "id": 6
     }
   ],
   "movieLists": [

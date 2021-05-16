@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react"
 import { updateList, getListingByMovieListId, getList, deleteList } from "../../modules/ListManager"
-import { searchMovie } from "../../modules/APIManager"
+
+import { MiniListEdit } from "./MiniListEdit"
 import { Link, useHistory, useParams } from "react-router-dom"
 import "./ListForm.css"
 
 
 
-export const ListEditForm = () => {
+export const EditList = () => {
   const [list, setList] = useState({});
   const [listings, setListings] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [searchMovies, setSearchMovies] = useState([])
 
   const { listId } = useParams();
   const history = useHistory();
@@ -42,6 +42,7 @@ export const ListEditForm = () => {
     history.push("/mylists")
     )
   };
+  
   
   
 
@@ -99,24 +100,17 @@ export const ListEditForm = () => {
           </fieldset>
           <div>
             {listings.map(l => (
-              <h3>{l.title}
-              </h3>
+              <MiniListEdit key={l.id} listing={l}/>
             ))}
           </div>
           <fieldset>
             <div className="form-group">
-              {/* <label htmlFor="searchMovie">Add Movie To List: </label> */}
-              {/* <input  type="text" id="searchMovie" onChange={printAPICall} required autoFocus className="form-control" placeholder="Movie Title" /> */}
+              
             </div>
-            {/* <button className="corner-button-green" type="button" disabled={isLoading}
-              onClick={printAPICall}>PRINT</button> */}
-            {/* {searchMovies.map(s =>(
-              <h3>{s.movie.name}
-              </h3>
-            ))} */}
+            
           </fieldset>
           <div className="container-cards">
-          <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="button-add-green">Change Movies</button></Link>
+          <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="button-add-green">Add Movies!</button></Link>
           </div>
 
           <div className="buttons">

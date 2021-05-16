@@ -17,7 +17,7 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
         ?   <ul className="navbar">
                 {isAuthenticated
                     ? <li className="navbar_item">
-                        <Link to="/"><img className="logo-navbar"src={require('./logo_popscore.png').default}  /></Link>
+                        <Link to="/"><img className="logo-navbar"src={require('./logo_popscore.png').default} alt="logo" /></Link>
                     </li>
                     : null}
                 {isAuthenticated
@@ -37,7 +37,7 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
                     : null}
                 {isAuthenticated
                     ? <li className="navbar_logout">
-                        <Link className="navbar_link" onClick={handleLogout}> Logout </Link>
+                        <Link className="navbar_link" to ="/" onClick={handleLogout}> Logout </Link>
                     </li>
                     : <li className="navbar_item">
                         <Link className=" navbar_link" to="/login"> Login </Link>

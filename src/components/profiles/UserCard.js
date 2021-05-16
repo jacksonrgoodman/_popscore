@@ -1,7 +1,6 @@
 import React from 'react';
 import "./ProfileCard.css";
-import { Link } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
+
 
 
 
