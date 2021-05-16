@@ -1,7 +1,7 @@
 import React from 'react';
 import "./MeetupCard.css";
 import { Link } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
+
 
 
 

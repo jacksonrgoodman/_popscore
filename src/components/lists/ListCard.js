@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import "./ListCard.css";
 import { getListingByMovieListId } from "../../modules/ListManager"
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MiniListingCard } from "../listing/MiniListingCard";
-import userEvent from '@testing-library/user-event';
+
 
 
 
 export const ListCard = ({ list }) => {
   ////console.log("Object Passed Into List Card:",list)
   const [listings, setListings] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+
   
   useEffect(() => {
     getListingByMovieListId(
@@ -18,7 +18,7 @@ export const ListCard = ({ list }) => {
         )
         .then(listings => {
             setListings(listings);
-            setIsLoading(false);
+
     });
 }, []);
 const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
@@ -45,9 +45,7 @@ const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
         
           <h3>Featuring:</h3>
         {listings.map(l =>(
-          <MiniListingCard key={l.id} movie={l}/>
-          
-          ))}
+          <MiniListingCard key={l.id} movie={l}/>))}
         
       </div>
       <div>
@@ -57,7 +55,7 @@ const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
       }</div>
       <div>
           {currentUser === list.userId ?
-          <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="corner-button">Edit Movies</button></Link>
+          <Link className="container-cards" to={`/listings/${list.id}/edit`}><button className="corner-button">Add Movies!</button></Link>
           :""
         }
         </div>

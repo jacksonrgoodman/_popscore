@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { MyListCard } from './MyListCard';
-import { getAllLists, remove, getMovieListsByUserId } from '../../modules/ListManager.js';
-import { useHistory } from "react-router-dom";
+import { getMovieListsByUserId } from '../../modules/ListManager.js';
 import { Link } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
+
 
 
 export const MyLists = () => {
     const [lists, setLists] = useState([]);
-    const history = useHistory();
 
     //console.log("List Stored In SetState:", lists)
 

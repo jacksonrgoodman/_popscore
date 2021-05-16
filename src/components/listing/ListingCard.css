@@ -8,12 +8,14 @@
 
 .movie-content {
     display: flex;
-
+    justify-content: space-between;
 }
 .moviePoster {
     align-items: center;
     border: .25rem solid plum;
     border-radius: 1rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
 }
 
 .titleBin {
@@ -21,6 +23,7 @@
 }
 
 .miniMoviePoster {
+    margin-left: 20 rem;
     width: 75%;
     align-items: center;
     border: .25rem solid plum;
@@ -30,6 +33,7 @@
     color: white;
     width: 75%;
     align-self: center;
+    
     
 }
 

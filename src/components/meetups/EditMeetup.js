@@ -11,7 +11,6 @@ const [lists, setLists] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const {meetupId} = useParams();
-  const {userId} = useParams();
   const history = useHistory();
 
   const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))

@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { UserCard } from './UserCard';
-import { getAllUsers, remove, getUserById } from '../../modules/UserManager.js';
-import { useHistory } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
+import { getUserById } from '../../modules/UserManager.js';
+
 
 import "./ProfileCard.css"
 
 
 export const UserProfile = () => {
     const [user, setUsers] = useState([]);
-    const history = useHistory();
+    
 
     //console.log("User Stored In SetState:", user)
 
@@ -27,16 +26,16 @@ export const UserProfile = () => {
 
     useEffect(() => {
         getUser();
+
     }, []);
-    //console.log(user)
+    
   return (
     <>
     <section className="user-profile"> 
-      <div className="user-card">
-      <h5 className="welcome">Welcome to <img className="logo"src={require('../../images/logo_popscore.png').default} /></h5>
-        <UserCard key={user.id} user={user} />
+        <div className="user-card">
+            <UserCard key={user.id} user={user} />
         </div>
-        </section>
+    </section>
     </>
     );
 };

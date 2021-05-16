@@ -10,7 +10,7 @@ import { UserList } from "./components/lists/UserList"
 import { MyLists } from "./components/lists/MyLists"
 import { ListList } from "./components/lists/ListList"
 import { AddList } from "./components/lists/AddList"
-import { ListEditForm } from "./components/lists/EditList"
+import { EditList } from "./components/lists/EditList"
 
 import { UserMeetup } from "./components/meetups/UserMeetup"
 import { MyMeetups } from "./components/meetups/MyMeetups"
@@ -71,7 +71,7 @@ export const ApplicationViews = ({ isAuthenticated,setAuthUser}) => {
             </Route>
 
             <Route path="/lists/:listId(\d+)/edit">
-                <ListEditForm />
+                <EditList />
             </Route>
             <Route path="/listings/:listingId(\d+)/edit">
                 <ListingEditForm />

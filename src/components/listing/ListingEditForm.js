@@ -4,30 +4,30 @@
 
 //UseRef, does not trigger re-render
 
-import React, { useState, useEffect, useRef } from "react"
-import { searchMovie, searchOtherMovie } from "../../modules/APIManager"
-import { useHistory, useParams } from "react-router-dom"
+import React, { useState, useRef } from "react"
+import { searchMovie} from "../../modules/APIManager"
+import {  useParams } from "react-router-dom"
 import { ListingCard } from "./ListingCard";
 import "./ListingCard.css"
 
 export const ListingEditForm = () => {
-    const [listing, setListing] = useState([]);
+    
     const [movies, setMovies] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    
 
     const { listingId } = useParams();
-    const history = useHistory();
+    
 
     const searchInput = useRef("");
 
     const handleSearch = () => {
-        console.log(searchInput.current.value)
+        // console.log(searchInput.current.value)
         const searchedMovie = searchInput.current.value
         searchMovie(searchedMovie)
         .then(res => {
-            console.log(res.results)
+            // console.log(res.results)
             setMovies(res.results)
-            setIsLoading(false);
+
         })
     }
 

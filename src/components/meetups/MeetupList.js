@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MeetupCard } from './MeetupCard';
 import { Link } from "react-router-dom";
-import { getAllMeetups, remove, getUserById } from '../../modules/MeetupManager.js';
-import { useHistory } from "react-router-dom";
-import userEvent from '@testing-library/user-event';
+import { getAllMeetups } from '../../modules/MeetupManager.js';
+
 
 
 export const MeetupList = () => {
@@ -16,7 +15,7 @@ export const MeetupList = () => {
   useEffect(() => {
     getMeetups();
   }, []);
-  const history = useHistory();
+  
   return (
     <>
       <section className="button"> 
