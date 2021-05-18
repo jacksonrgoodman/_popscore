@@ -9,7 +9,7 @@ Developed by [Jackson Goodman](https://github.com/jacksonrgoodman), For Cohort 4
 ## Usage
 1. Run `json-server -p 8088 -w database.json`  in api directory of project
 2. Run `npm start` in root of project
-3. Test feature
+3. Test features. Register and add movie lists.
 
 
 ## Contributing
