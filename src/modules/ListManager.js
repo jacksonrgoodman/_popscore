@@ -9,6 +9,10 @@ export const getList = (id) => {
     return fetch(`${remoteURL}/movieLists/${id}`)
     .then(res => res.json())
 }
+export const getListingsbyMovieList = (id) => {
+    return fetch(`${remoteURL}/movieLists/${id}?_embed=listings`)
+    .then(res => res.json())
+}
 
 export const getMovieListsByUserId = (id) => {
     //console.log("ID PASSED INTO MOVIELIST BY ID FETCH",id)

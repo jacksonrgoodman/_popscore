@@ -6,7 +6,6 @@ export const searchMovie = (term) => {
     .then(result => result.json())
 }
 export const getMoviebyId = (movie_id) => {
-    // return fetch(`${tmdbAPIAddress}/${movie_id}?api_key=${tmdbAPIKey}&language=en-US`)
     return fetch(`
     https://api.themoviedb.org/3/movie/${movie_id}?api_key=${tmdbAPIKey}&language=en-US`)
     .then(result => result.json())

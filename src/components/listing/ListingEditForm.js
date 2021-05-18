@@ -4,15 +4,17 @@
 
 //UseRef, does not trigger re-render
 
-import React, { useState, useRef } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { searchMovie} from "../../modules/APIManager"
 import {  useParams } from "react-router-dom"
 import { ListingCard } from "./ListingCard";
 import "./ListingCard.css"
+import { getListingByMovieListId } from "../../modules/ListManager";
 
 export const ListingEditForm = () => {
     
     const [movies, setMovies] = useState([]);
+    
     
 
     const { listingId } = useParams();
@@ -23,13 +25,22 @@ export const ListingEditForm = () => {
     const handleSearch = () => {
         // console.log(searchInput.current.value)
         const searchedMovie = searchInput.current.value
-        searchMovie(searchedMovie)
-        .then(res => {
-            // console.log(res.results)
-            setMovies(res.results)
-
-        })
+        if (searchedMovie === "") {
+			window.alert("Please Search For a Movie Title")
+		} else {
+			//invoke addList passing list as an argument.
+			//once complete, change the url and display the list list
+            searchMovie(searchedMovie)
+            .then(res => {
+                // console.log(res.results)
+                setMovies(res.results)
+    
+            })
+			
+		}
     }
+
+    
 
     return (
         <>
@@ -41,7 +52,7 @@ export const ListingEditForm = () => {
                 </div>
                 <div>
                     {movies.map(m => (
-                        <ListingCard key={m.id} movie={m} list ={listingId}/>
+                        <ListingCard key={m.id} movie={m} list ={listingId} />
                     ))}
                 </div>
             </div>

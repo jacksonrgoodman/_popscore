@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getListingByMovieListId } from "../../modules/ListManager"
+import { MiniListingCard } from "../listing/MiniListingCard";
 import "./MeetupCard.css";
 import { Link } from "react-router-dom";
 
@@ -6,7 +8,34 @@ import { Link } from "react-router-dom";
 
 export const MyMeetupCard = ({ meetup }) => {
   //console.log("Object Passed Into Meetup Card:", meetup)
+  const [listings, setListings] = useState([]);
+  
+
+
+  const dateSplit = (meetup.date.split("-"))
+  const year = (dateSplit[0])
+  const day = (dateSplit[2])
+  const month = (dateSplit[1])
+  
   const currentUser = JSON.parse(sessionStorage.getItem("popscore_User"))
+  const hour = (parseInt(meetup.time.split(":",1)))
+  const minute = (meetup.time.split(":"))
+  const updateMinute = (minute.shift())
+  const updatetime = ( hour > 12 ? (hour - 12) : hour )
+  const nightNoon = ( hour > 12 ? " PM" : " AM")
+
+  useEffect(() => {
+    
+    getListingByMovieListId(
+        meetup.movieListId
+        )
+        .then(listings => {
+            setListings(listings);
+
+    });
+}, []);
+
+
 
   return (
     <div className="all-meetup-cards">
@@ -20,7 +49,7 @@ export const MyMeetupCard = ({ meetup }) => {
         <span className="card-name">
           <h3>
             {meetup.name}
-            <p>{meetup.time}</p>
+            <p>{updatetime}:{minute}{nightNoon}</p>
           <p>{meetup.description}</p>
           </h3>
         </span>
@@ -30,7 +59,9 @@ export const MyMeetupCard = ({ meetup }) => {
             On:&nbsp;
           </p>
               <p className="generated-detail">
-                {meetup.date}
+                {month}/
+                {day}/
+                {year}
               </p>
         </span>
         <span className="card-detail">
@@ -57,6 +88,9 @@ export const MyMeetupCard = ({ meetup }) => {
                 {meetup.movieList.name}
               </p>
         </span>
+        <h5>Featuring:</h5>
+        {listings.map(l =>(
+          <MiniListingCard key={l.id} movie={l}/>))}
       </div>
     </div>
   );
