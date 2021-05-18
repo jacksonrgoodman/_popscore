@@ -79,20 +79,6 @@ export const AddList = () => {
 					<input type="text" id="desc" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="List description" value={list.desc} />
 				</div>
 			</fieldset>
-			
-			<fieldset>
-				<div className="form-group">
-					<label htmlFor="employeeId">Add From My Movie List: </label>
-					{/* <select value={list.employeeId} name="employee" id="employeeId" onChange={handleControlledInputChange} className="form-control" >
-						<option value="0">Select a employee</option>
-						{employees.map(e => (
-							<option key={e.id} value={e.id}>
-								{e.name}
-							</option>
-						))}
-					</select> */}
-				</div>
-			</fieldset>
 			<button className="corner-button"
 				onClick={handleClickSaveList}>
 				Save List

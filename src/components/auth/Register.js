@@ -34,6 +34,7 @@ export const Register = ({setAuthUser}) => {
                             userName: userName.current.value,
                             email: email.current.value,
                             bio: bio.current.value,
+                            pic: "Head2.png",
                             isAdmin: false
                         })
                     })

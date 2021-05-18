@@ -113,7 +113,7 @@ export const MeetupForm = () => {
 					<select value={meetup.movieListId} name="list" id="movieListId" onChange={handleControlledInputChange} className="form-control" >
 						<option value="0">Select a list</option>
 						{lists.map(l => (
-							<option kly={l.id} value={l.id}>
+							<option key={l.id} value={l.id}>
 								{l.name}
 							</option>
 						))}

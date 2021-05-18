@@ -46,24 +46,16 @@
       "id": 5
     },
     {
-      "name": "Jacksons Younger Brother",
+      "name": "Griffin",
       "userName": "gr1f",
       "email": "flatearthsociety@gmail.com",
       "pic": "Head1.png",
-      "bio": "Jackson's younger brother",
+      "bio": "my brother",
       "isAdmin": false,
       "id": 6
     }
   ],
   "listings": [
-    {
-      "movieId": 23483,
-      "movieListId": 5,
-      "title": "Kick-Ass",
-      "poster_path": "/GPiMXaDC2NdDIldLgtijHFTeKH.jpg",
-      "release_date": "2010-03-22",
-      "id": 1
-    },
     {
       "movieId": 223485,
       "movieListId": 6,
@@ -73,29 +65,133 @@
       "id": 3
     },
     {
-      "movieId": 9470,
-      "movieListId": 5,
-      "title": "Kung Fu Hustle",
-      "poster_path": "/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg",
-      "release_date": "2004-02-10",
-      "id": 5
-    },
-    {
       "movieId": 5176,
       "movieListId": 6,
       "title": "3:10 to Yuma",
       "poster_path": "/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg",
       "release_date": "2007-09-06",
       "id": 6
+    },
+    {
+      "movieId": 290250,
+      "movieListId": 5,
+      "title": "The Nice Guys",
+      "poster_path": "/clq4So9spa9cXk3MZy2iMdqkxP2.jpg",
+      "release_date": "2016-05-15",
+      "id": 7
+    },
+    {
+      "movieId": 578,
+      "movieListId": 1,
+      "title": "Jaws",
+      "poster_path": "/s2xcqSFfT6F7ZXHxowjxfG0yisT.jpg",
+      "release_date": "1975-06-18",
+      "id": 9
+    },
+    {
+      "movieId": 644,
+      "movieListId": 1,
+      "title": "A.I. Artificial Intelligence",
+      "poster_path": "/wnUAcUrMRGPPZUDroLeZhSjLkuu.jpg",
+      "release_date": "2001-06-29",
+      "id": 10
+    },
+    {
+      "movieId": 14160,
+      "movieListId": 7,
+      "title": "Up",
+      "poster_path": "/eAdO0qa9m0NFSVLZ26PvCwmPlsr.jpg",
+      "release_date": "2009-05-28",
+      "id": 13
+    },
+    {
+      "movieId": 12593,
+      "movieListId": 7,
+      "title": "Fritz the Cat",
+      "poster_path": "/bprngSxyeqApaUQkPcBLAMvZrd9.jpg",
+      "release_date": "1972-04-12",
+      "id": 14
+    },
+    {
+      "movieId": 210577,
+      "movieListId": 2,
+      "title": "Gone Girl",
+      "poster_path": "/qymaJhucquUwjpb8oiqynMeXnID.jpg",
+      "release_date": "2014-10-01",
+      "id": 15
+    },
+    {
+      "movieId": 1949,
+      "movieListId": 2,
+      "title": "Zodiac",
+      "poster_path": "/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+      "release_date": "2007-03-02",
+      "id": 16
+    },
+    {
+      "movieId": 10279,
+      "movieListId": 3,
+      "title": "Summer of Sam",
+      "poster_path": "/4hy39xRseqW8sLfKy9wqLPoo6KT.jpg",
+      "release_date": "1999-07-02",
+      "id": 17
+    },
+    {
+      "movieId": 20649,
+      "movieListId": 3,
+      "title": "Clockers",
+      "poster_path": "/c79uqLJleho2a7OQayfrW5Ypphf.jpg",
+      "release_date": "1995-09-15",
+      "id": 18
+    },
+    {
+      "movieId": 793,
+      "movieListId": 4,
+      "title": "Blue Velvet",
+      "poster_path": "/1ngSOsdyYaI6hw6B9gEreWLQocf.jpg",
+      "release_date": "1986-09-19",
+      "id": 19
+    },
+    {
+      "movieId": 1018,
+      "movieListId": 4,
+      "title": "Mulholland Drive",
+      "poster_path": "/tVxGt7uffLVhIIcwuldXOMpFBPX.jpg",
+      "release_date": "2001-06-06",
+      "id": 20
+    },
+    {
+      "movieId": 128,
+      "movieListId": 8,
+      "title": "Princess Mononoke",
+      "poster_path": "/pdtzEreKvKAlqa2YEBaGwiA45V8.jpg",
+      "release_date": "1997-07-12",
+      "id": 21
+    },
+    {
+      "movieId": 4935,
+      "movieListId": 8,
+      "title": "Howl's Moving Castle",
+      "poster_path": "/TkTPELv4kC3u1lkloush8skOjE.jpg",
+      "release_date": "2004-11-19",
+      "id": 22
+    },
+    {
+      "movieId": 453405,
+      "movieListId": 5,
+      "title": "Gemini Man",
+      "poster_path": "/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "release_date": "2019-10-02",
+      "id": 23
     }
   ],
   "movieLists": [
     {
       "id": 1,
       "userId": 1,
-      "name": "Spielberg's Water-Based Filmography",
+      "name": "Speilberg Water Movies",
       "listTheme": "Violet",
-      "desc": "Water Movies"
+      "desc": "Need a bigger boat?"
     },
     {
       "id": 2,
@@ -114,9 +210,9 @@
     {
       "id": 4,
       "userId": 4,
-      "name": "Lynch Filmography 1988-1994",
+      "name": "David Lynch",
       "listTheme": "Pink",
-      "desc": "function"
+      "desc": "damn good coffee"
     },
     {
       "id": 5,
@@ -133,18 +229,18 @@
       "desc": "West of Eastwood!"
     },
     {
-      "name": "Animation",
-      "desc": "Literally anything else",
+      "id": 7,
       "userId": 6,
+      "name": "Animation",
       "listTheme": "XXX",
-      "id": 7
+      "desc": "Literally anything else"
     },
     {
-      "name": "Anime",
-      "desc": "what do you think",
+      "id": 8,
       "userId": 6,
+      "name": "Anime",
       "listTheme": "XXX",
-      "id": 8
+      "desc": "What do you think?"
     }
   ],
   "meetups": [
@@ -155,7 +251,7 @@
       "userId": 1,
       "movieListId": 1,
       "time": "13:21",
-      "date": "4/30/2020",
+      "date": "2020-04-30",
       "description": "fun in the sun this summer!",
       "isFull": false
     },
@@ -166,7 +262,7 @@
       "userId": 2,
       "movieListId": 2,
       "time": "13:21",
-      "date": "2/7/2021",
+      "date": "2021-02-07",
       "description": "Fincher Films. Simple As.",
       "isFull": false
     },
@@ -177,7 +273,7 @@
       "userId": 3,
       "movieListId": 3,
       "time": "13:21",
-      "date": "5/7/2020",
+      "date": "2020-05-07",
       "description": "BRAGG 103",
       "isFull": false
     },
@@ -188,17 +284,17 @@
       "userId": 4,
       "movieListId": 4,
       "time": "13:21",
-      "date": "9/4/2020",
+      "date": "2020-09-04",
       "description": "Best of David Lynch",
       "isFull": false
     },
     {
       "id": 6,
       "name": "Dad's Picks Cinema Club",
-      "description": "Movies To Like",
+      "description": "Movies To Watch With My Dad",
       "address": "6962 Logan Circle",
       "date": "2021-05-11",
-      "time": "20:00",
+      "time": "20:30",
       "userId": 5,
       "movieListId": 6,
       "isFull": false
