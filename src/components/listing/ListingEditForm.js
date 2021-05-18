@@ -46,9 +46,9 @@ export const ListingEditForm = () => {
         <>
             <div className= "movie-bin">
                 <h1 className="my-lists-title">Search For A Movie</h1>
-                <div className= "movie-bin-search">
                     <input ref={searchInput} type="text" className="form-control-search"></input>
-                    <button className="corner-button-purple" onClick={handleSearch} >SEARCH!</button>
+                <div className= "container-cards cntr">
+                    <button className="button-add-green" onClick={handleSearch} >SEARCH!</button>
                 </div>
                 <div>
                     {movies.map(m => (

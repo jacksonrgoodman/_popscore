@@ -11,29 +11,11 @@
     },
     {
       "id": 2,
-      "name": "Mario Iacovo",
-      "userName": "miacovo1",
-      "email": "miacovo1@slate.com",
-      "pic": "Head3.png",
-      "bio": "Phased",
-      "isAdmin": false
-    },
-    {
-      "id": 3,
       "pic": "Head1.png",
       "name": "Jo ann Skitteral",
       "userName": "jann2",
       "email": "jann2@geocities.jp",
       "bio": "bandwidth-monitored",
-      "isAdmin": false
-    },
-    {
-      "id": 4,
-      "name": "Alla Quaife",
-      "pic": "Head3.png",
-      "userName": "aquaife3",
-      "email": "aquaife3@dot.gov",
-      "bio": "heuristic",
       "isAdmin": false
     },
     {
@@ -43,7 +25,7 @@
       "bio": "I am a gamer",
       "pic": "Head4.png",
       "isAdmin": false,
-      "id": 5
+      "id": 3
     },
     {
       "name": "Griffin",
@@ -52,34 +34,10 @@
       "pic": "Head1.png",
       "bio": "my brother",
       "isAdmin": false,
-      "id": 6
+      "id": 4
     }
   ],
   "listings": [
-    {
-      "movieId": 223485,
-      "movieListId": 6,
-      "title": "Slow West",
-      "poster_path": "/j3PmbRZvf5KpNbapSjn8b0CpD6a.jpg",
-      "release_date": "2015-04-16",
-      "id": 3
-    },
-    {
-      "movieId": 5176,
-      "movieListId": 6,
-      "title": "3:10 to Yuma",
-      "poster_path": "/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg",
-      "release_date": "2007-09-06",
-      "id": 6
-    },
-    {
-      "movieId": 290250,
-      "movieListId": 5,
-      "title": "The Nice Guys",
-      "poster_path": "/clq4So9spa9cXk3MZy2iMdqkxP2.jpg",
-      "release_date": "2016-05-15",
-      "id": 7
-    },
     {
       "movieId": 578,
       "movieListId": 1,
@@ -97,40 +55,8 @@
       "id": 10
     },
     {
-      "movieId": 14160,
-      "movieListId": 7,
-      "title": "Up",
-      "poster_path": "/eAdO0qa9m0NFSVLZ26PvCwmPlsr.jpg",
-      "release_date": "2009-05-28",
-      "id": 13
-    },
-    {
-      "movieId": 12593,
-      "movieListId": 7,
-      "title": "Fritz the Cat",
-      "poster_path": "/bprngSxyeqApaUQkPcBLAMvZrd9.jpg",
-      "release_date": "1972-04-12",
-      "id": 14
-    },
-    {
-      "movieId": 210577,
-      "movieListId": 2,
-      "title": "Gone Girl",
-      "poster_path": "/qymaJhucquUwjpb8oiqynMeXnID.jpg",
-      "release_date": "2014-10-01",
-      "id": 15
-    },
-    {
-      "movieId": 1949,
-      "movieListId": 2,
-      "title": "Zodiac",
-      "poster_path": "/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
-      "release_date": "2007-03-02",
-      "id": 16
-    },
-    {
       "movieId": 10279,
-      "movieListId": 3,
+      "movieListId": 2,
       "title": "Summer of Sam",
       "poster_path": "/4hy39xRseqW8sLfKy9wqLPoo6KT.jpg",
       "release_date": "1999-07-02",
@@ -138,51 +64,27 @@
     },
     {
       "movieId": 20649,
-      "movieListId": 3,
+      "movieListId": 2,
       "title": "Clockers",
       "poster_path": "/c79uqLJleho2a7OQayfrW5Ypphf.jpg",
       "release_date": "1995-09-15",
       "id": 18
     },
     {
-      "movieId": 793,
-      "movieListId": 4,
-      "title": "Blue Velvet",
-      "poster_path": "/1ngSOsdyYaI6hw6B9gEreWLQocf.jpg",
-      "release_date": "1986-09-19",
+      "movieId": 324857,
+      "movieListId": 3,
+      "title": "Spider-Man: Into the Spider-Verse",
+      "poster_path": "/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+      "release_date": "2018-12-06",
       "id": 19
     },
     {
-      "movieId": 1018,
-      "movieListId": 4,
-      "title": "Mulholland Drive",
-      "poster_path": "/tVxGt7uffLVhIIcwuldXOMpFBPX.jpg",
-      "release_date": "2001-06-06",
+      "movieId": 16234,
+      "movieListId": 3,
+      "title": "Batman Beyond: Return of the Joker",
+      "poster_path": "/7RlBs0An83fqAuKfwH5gKMcqgMc.jpg",
+      "release_date": "2000-12-12",
       "id": 20
-    },
-    {
-      "movieId": 128,
-      "movieListId": 8,
-      "title": "Princess Mononoke",
-      "poster_path": "/pdtzEreKvKAlqa2YEBaGwiA45V8.jpg",
-      "release_date": "1997-07-12",
-      "id": 21
-    },
-    {
-      "movieId": 4935,
-      "movieListId": 8,
-      "title": "Howl's Moving Castle",
-      "poster_path": "/TkTPELv4kC3u1lkloush8skOjE.jpg",
-      "release_date": "2004-11-19",
-      "id": 22
-    },
-    {
-      "movieId": 453405,
-      "movieListId": 5,
-      "title": "Gemini Man",
-      "poster_path": "/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
-      "release_date": "2019-10-02",
-      "id": 23
     }
   ],
   "movieLists": [
@@ -196,51 +98,16 @@
     {
       "id": 2,
       "userId": 2,
-      "name": "Fincher Flicks",
-      "listTheme": "Fuscia",
-      "desc": "Costco Brand Terrence Malik"
-    },
-    {
-      "id": 3,
-      "userId": 3,
       "name": "spike Lee joints",
       "listTheme": "Red",
       "desc": "not just Do the Right Thing"
     },
     {
-      "id": 4,
+      "id": 3,
       "userId": 4,
-      "name": "David Lynch",
-      "listTheme": "Pink",
-      "desc": "damn good coffee"
-    },
-    {
-      "id": 5,
-      "userId": 5,
-      "name": "Action Films",
-      "listTheme": "Purple",
-      "desc": "Jean Claud Van DAMN"
-    },
-    {
-      "id": 6,
-      "userId": 5,
-      "name": "Westerns",
-      "listTheme": "Red",
-      "desc": "West of Eastwood!"
-    },
-    {
-      "id": 7,
-      "userId": 6,
       "name": "Animation",
       "listTheme": "XXX",
       "desc": "Literally anything else"
-    },
-    {
-      "id": 8,
-      "userId": 6,
-      "name": "Anime",
-      "listTheme": "XXX",
-      "desc": "What do you think?"
     }
   ],
   "meetups": [
@@ -257,46 +124,13 @@
     },
     {
       "id": 2,
-      "name": "Finch-O-Rama",
-      "address": "13822 North Parkway",
+      "name": "Movie Night MTSU",
+      "address": "1 Shelley Alley",
       "userId": 2,
       "movieListId": 2,
       "time": "13:21",
-      "date": "2021-02-07",
-      "description": "Fincher Films. Simple As.",
-      "isFull": false
-    },
-    {
-      "id": 3,
-      "name": "Movie Night MTSU",
-      "address": "1 Shelley Alley",
-      "userId": 3,
-      "movieListId": 3,
-      "time": "13:21",
       "date": "2020-05-07",
       "description": "BRAGG 103",
-      "isFull": false
-    },
-    {
-      "id": 4,
-      "name": "Black Lodge Cinema Club",
-      "address": "6962 Logan Circle",
-      "userId": 4,
-      "movieListId": 4,
-      "time": "13:21",
-      "date": "2020-09-04",
-      "description": "Best of David Lynch",
-      "isFull": false
-    },
-    {
-      "id": 6,
-      "name": "Dad's Picks Cinema Club",
-      "description": "Movies To Watch With My Dad",
-      "address": "6962 Logan Circle",
-      "date": "2021-05-11",
-      "time": "20:30",
-      "userId": 5,
-      "movieListId": 6,
       "isFull": false
     },
     {
@@ -304,11 +138,11 @@
       "address": "pm for discord link",
       "date": "2069-04-20",
       "time": "04:20",
-      "userId": 6,
-      "movieListId": 7,
+      "userId": 4,
+      "movieListId": 3,
       "isFull": false,
       "description": "cool peeps only in my discord",
-      "id": 7
+      "id": 3
     }
   ]
 }

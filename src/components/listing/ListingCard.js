@@ -19,18 +19,25 @@ export const ListingCard = ({ movie, list }) => {
   const history = useHistory();
 
 const addMovie = () => {
-  const firstMovie =  parseInt(listings.listings[0].movieId)
-  const secondMovie =  parseInt(listings.listings[1].movieId)
+  // const firstMovie =  listings.listings[0].movieId
+  // const secondMovie =  listings.listings[1].movieId
   const movieLength = listings.listings.length
-  if (firstMovie === movie.id || secondMovie === movie.id) {
-    window.alert("You Already Have That Movie!")
-  } else if (movieLength >= 2) {
-    window.alert("Too Many Movies!")
-  } else {
-    addListing(movies)
-    .then(() => history.push(`/lists/${list}/edit`))
-    
-  }
+  
+  // if (firstMovie === undefined ||secondMovie === undefined){
+  //   addListing(movies)
+  //   .then(() => history.push(`/lists/${list}/edit`))
+  // } else {
+  //   if ( firstMovie === movie.id || secondMovie === movie.id) {
+  //     window.alert("You Already Have That Movie!")
+  //   } else 
+    if (movieLength >= 2) {
+      window.alert("Too Many Movies! You can Only Pick 2 Per List!")
+    } else {
+      addListing(movies)
+      .then(() => history.push(`/lists/${list}/edit`))
+      
+    }
+  // }
 }
 
 useEffect(() => {
