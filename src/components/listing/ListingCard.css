@@ -42,4 +42,7 @@
     background: white;
     display: flex;
     align-self: center;
+    margin-bottom: 1rem;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
 }
