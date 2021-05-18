@@ -1,4 +1,4 @@
-![](./src/images/logo_popscore.png)
+![](./src/components/auth/logo_popscore_login.png)
 🍿_popscore is a React App for organizing movie watch parties
 
 Developed by [Jackson Goodman](https://github.com/jacksonrgoodman), For Cohort 47's Front-End Capstone
