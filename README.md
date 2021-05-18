@@ -1,6 +1,6 @@
 # 🍿_popscore
 🍿_popscore is a React App for organizing movie watch parties
-
+![](./src/images/logo_popscore.png)
 ## Installation
 1. git clone this repository
 
